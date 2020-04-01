@@ -1,11 +1,10 @@
 {
   "name": "layout-designer-project-lvl2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Music Box",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass src/styles/scss/main.scss src/styles/style.css"
+    "sass": "sass --watch src/styles/scss/app.scss:src/styles/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,10 @@
   "homepage": "https://github.com/Barrierok/layout-designer-project-lvl2#readme",
   "devDependencies": {
     "htmlhint": "^0.11.0",
+    "stylelint": "^13.2.1",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "surge": "^0.21.3"
   }
 }
