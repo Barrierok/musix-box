@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-@import 'variables';
-
-html {
-  font-family: 'Roboto', sans-serif;
-}
+@import './variables';
+@import './shared/atomic.scss';
+@import './shared/header.scss';

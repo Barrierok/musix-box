@@ -1,6 +1,59 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-between {
+  justify-content: space-between;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+header {
+  color: #808080;
+  text-transform: uppercase;
+}
+header .logo {
+  min-width: 10rem;
+}
+header .logo img {
+  height: 1.6rem;
+}
+header ul {
+  min-width: 30rem;
+  list-style: none;
+}
+header .input-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1 1 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
