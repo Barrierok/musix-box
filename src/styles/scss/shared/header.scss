@@ -3,7 +3,7 @@ header {
   text-transform: uppercase;
 
   .logo {
-    min-width: 10rem;
+    min-width: 5rem;
 
     img {
       height: 1.6rem;
@@ -15,9 +15,21 @@ header {
     list-style: none;
   }
 
-  .input-wrapper {
+  .left-section {
     display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .rigth-section {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
-    flex: 1 1 50%;
+    width: 50%;
+
+    input {
+      display: flex;
+      min-width: 100px;
+    }
   }
 }

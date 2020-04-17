@@ -36,12 +36,16 @@ html {
   width: 100%;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 header {
   color: #808080;
   text-transform: uppercase;
 }
 header .logo {
-  min-width: 10rem;
+  min-width: 5rem;
 }
 header .logo img {
   height: 1.6rem;
@@ -50,10 +54,20 @@ header ul {
   min-width: 30rem;
   list-style: none;
 }
-header .input-wrapper {
+header .left-section {
   display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+header .rigth-section {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
-  flex: 1 1 50%;
+  width: 50%;
+}
+header .rigth-section input {
+  display: flex;
+  min-width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
