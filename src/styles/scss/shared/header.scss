@@ -1,35 +1,109 @@
 header {
   color: $text-header;
-  text-transform: uppercase;
+  font-weight: bold;
+  font-size: px-to-rem(11px);
+  min-height: 100vh;
+  background: url('../images/banner.png') no-repeat center;
+}
+
+header .menu {
+  position: fixed;
+  top: px-to-rem(20px);
 
   .logo {
-    min-width: 5rem;
+    min-width: px-to-rem(80px);
+    flex: 1 1;
+    line-height: px-to-rem(17px);
+    vertical-align: middle;
 
     img {
-      height: 1.6rem;
+      height: px-to-rem(17px);
+      margin-right: px-to-rem(5px);
     }
   }
 
-  ul {
-    min-width: 30rem;
-    list-style: none;
-  }
+  nav {
+    flex: 4 2;
 
-  .left-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-  }
-
-  .rigth-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    width: 50%;
-
-    input {
-      display: flex;
-      min-width: 100px;
+    ul {
+      list-style: none; 
+      li {
+        margin-right: px-to-rem(55px);
+      }
     }
+  }
+
+  input {
+    width: px-to-rem(250px);
+    flex: 1.2 0.5;
+    border-radius: px-to-rem(50px);
+    height: px-to-rem(25px);
+    background-color: $input-header;
+    padding: px-to-rem(0px 15px);
+  }
+
+  input, input::placeholder {
+    color: inherit;
+  }
+}
+
+header article {
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+
+  h1 {
+    font-size: px-to-rem(60px);
+    line-height: px-to-rem(70px);
+  }
+
+  h3 {
+    font-size: px-to-rem(30px);
+    line-height: px-to-rem(35px);
+  }
+
+  p {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(21px);
+  }
+}
+
+header form {
+  max-width: px-to-rem(570px);
+  margin: auto;
+
+  input:first-child {
+    margin-right: px-to-rem(20px);
+  }
+
+  @media (max-width: 500px) {
+    input:first-child {
+      margin-right: 0;
+    }
+  }
+
+  input, button {
+    flex: 1 1 px-to-rem(270px);
+    margin-top: px-to-rem(25px);
+    height: px-to-rem(50px);
+    border-radius: px-to-rem(3px);
+    font-weight: bold;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(16px);
+  }
+  
+  input {
+    background: $banner-border;
+    border: px-to-rem(2px) solid $banner-border;
+    padding: px-to-rem(15px);
+  }
+
+  input, input::placeholder {
+    color: inherit;
+  }
+
+  button {
+    background: $green;
+    color: inherit;
   }
 }

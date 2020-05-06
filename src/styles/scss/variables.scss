@@ -12,8 +12,32 @@ $brown: #95390c;
 $red: #ff4157;
 $purple: #5328a1;
 $gradient: linear-gradient(89.02deg, #5328a1 32.83%, #95390c 81.56%);
+$rem-base: 10px;
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button, input {
+  border: none;
+}
+
+@function px-to-rem($list) {
+  $result: ();
+
+  @each $value in $list {
+    $result: append($result, (($value / $rem-base) * 1rem));
+  }
+
+  @return #{$result};
 }
