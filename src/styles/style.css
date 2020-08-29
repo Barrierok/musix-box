@@ -8,7 +8,7 @@ html {
   font-size: 10px;
 }
 
-body {
+body, h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -17,16 +17,41 @@ button, input {
   border: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+input::placeholder {
+  color: inherit;
+}
+
 .container {
+  width: 100%;
   max-width: 1200px;
+}
+@media (max-width: 1219px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .d-flex {
   display: flex;
 }
 
-.d-block {
-  display: block;
+.direction-column {
+  flex-direction: column;
 }
 
 .justify-content-between {
@@ -35,6 +60,10 @@ button, input {
 
 .justify-content-center {
   justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .align-items-center {
@@ -49,6 +78,10 @@ button, input {
   text-transform: uppercase;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -58,98 +91,198 @@ button, input {
 }
 
 header {
-  color: #808080;
-  font-weight: bold;
   font-size: 1.1rem;
-  min-height: 100vh;
-  background: url("../images/banner.png") no-repeat center;
-}
-
-header .menu {
+  line-height: 1.3rem;
+  color: #808080;
+  margin: 0 auto;
   position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
   top: 2rem;
 }
-header .menu .logo {
+header .logo {
   min-width: 8rem;
-  flex: 1 1;
-  line-height: 1.7rem;
-  vertical-align: middle;
+  flex: 2 1;
 }
-header .menu .logo img {
+header .logo img {
   height: 1.7rem;
+  width: 1.9rem;
   margin-right: 0.5rem;
 }
-header .menu nav {
-  flex: 4 2;
+header .logo img, header .logo span {
+  cursor: pointer;
 }
-header .menu nav ul {
-  list-style: none;
+header nav {
+  flex: 8 2;
 }
-header .menu nav ul li {
-  margin-right: 5.5rem;
+header nav li {
+  margin-right: 3.6rem;
 }
-header .menu input {
-  width: 25rem;
-  flex: 1.2 0.5;
+header input {
+  flex: 1 1 20rem;
   border-radius: 5rem;
   height: 2.5rem;
   background-color: #3c3b3d;
   padding: 0rem 1.5rem;
 }
-header .menu input, header .menu input::placeholder {
-  color: inherit;
+
+footer {
+  background: linear-gradient(89.02deg, #5328a1 32.83%, #95390c 81.56%);
+  color: #cacaca;
+}
+footer section {
+  flex: 1 1;
+  margin-right: 2rem;
+}
+footer a {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-style: normal;
+}
+footer .top-part {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+footer .top-part h5 {
+  margin-bottom: 3rem;
+  font-size: 2.1rem;
+  line-height: 1.8rem;
+}
+footer .top-part li {
+  margin-bottom: 2rem;
+}
+footer .top-part img {
+  margin-right: 2.1rem;
+}
+footer .line {
+  border-bottom: 1px solid #eee;
+}
+footer .bottom-part {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+footer .bottom-part li {
+  margin-right: 4rem;
 }
 
-header article {
+section.banner {
+  min-height: 100vh;
+  background: url("../images/banner.png") no-repeat center;
   color: #fff;
-  font-weight: bold;
   text-align: center;
 }
-header article h1 {
+section.banner h1 {
   font-size: 6rem;
   line-height: 7rem;
 }
-header article h3 {
+section.banner h3 {
   font-size: 3rem;
   line-height: 3.5rem;
+  margin: 1rem 0rem;
 }
-header article p {
+section.banner p {
   font-size: 1.8rem;
   line-height: 2.1rem;
+  margin: 3.5rem 0rem 1rem;
 }
 
-header form {
-  max-width: 57rem;
-  margin: auto;
+section.banner form {
+  max-width: 60rem;
+  margin: 0 auto;
 }
-header form input:first-child {
-  margin-right: 2rem;
-}
-@media (max-width: 500px) {
-  header form input:first-child {
-    margin-right: 0;
-  }
-}
-header form input, header form button {
+section.banner form input,
+section.banner form button {
   flex: 1 1 27rem;
-  margin-top: 2.5rem;
+  margin: 3rem 1.5rem 0rem;
   height: 5rem;
-  border-radius: 0.3rem;
-  font-weight: bold;
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
-header form input {
+section.banner form input {
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.3rem;
   border: 0.2rem solid rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
 }
-header form input, header form input::placeholder {
-  color: inherit;
-}
-header form button {
+section.banner form button {
   background: #34c176;
   color: inherit;
+}
+
+main {
+  background: #08020D;
+  color: #fff;
+}
+main section {
+  text-align: center;
+}
+main h2 {
+  font-size: 3.8rem;
+  line-height: 4.5rem;
+  margin-top: 100px;
+}
+
+.subscription p {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  margin-top: 5rem;
+}
+.subscription .box {
+  margin-left: -7.5rem;
+}
+.subscription .box .card {
+  position: relative;
+  flex: 1 1 28rem;
+  max-width: 36rem;
+  margin: 5rem 0rem 0rem 7.5rem;
+  min-height: 58rem;
+  border-radius: 1rem;
+  padding: 0rem 2.5rem;
+}
+.subscription .box .card h4 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  position: absolute;
+  top: 2.4rem;
+}
+.subscription .box .card span .number {
+  font-size: 6rem;
+  line-height: 6rem;
+  margin-right: 1rem;
+}
+.subscription .box .card span .money {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  vertical-align: top;
+}
+.subscription .box .card button {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  border: 4px solid #fff;
+  margin-top: 4rem;
+  background: none;
+  width: 100%;
+  padding: 2.1rem 0rem;
+}
+.subscription .box .card p {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 6rem;
+}
+.subscription .box .free {
+  background: url("../images/subscribe_1.png") no-repeat center;
+  background-size: cover;
+}
+.subscription .box .standart {
+  background: url("../images/subscribe_2.png") no-repeat center;
+  background-size: cover;
+}
+.subscription .box .premium {
+  background: url("../images/subscribe_3.png") no-repeat center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

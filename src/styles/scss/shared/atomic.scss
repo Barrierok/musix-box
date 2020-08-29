@@ -1,13 +1,18 @@
 .container {
+  width: 100%;
   max-width: 1200px;
+
+  @media (max-width: 1219px) {
+    padding: 0 20px;
+  }
 }
 
 .d-flex {
   display: flex;
 }
 
-.d-block {
-  display: block;
+.direction-column {
+  flex-direction: column;
 }
 
 .justify-content-between {
@@ -16,6 +21,10 @@
 
 .justify-content-center {
   justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .align-items-center {
@@ -28,6 +37,10 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .w-100 {

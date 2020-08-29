@@ -23,6 +23,6 @@
     "stylelint-scss": "^3.17.1"
   },
   "dependencies": {
-    "surge": "^0.21.3"
+    "surge": "^0.21.6"
   }
 }

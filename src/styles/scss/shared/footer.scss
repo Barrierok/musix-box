@@ -1,0 +1,45 @@
+footer {
+  background: $gradient;
+  color: $text-footer;
+
+  section {
+    flex: 1 1;
+    margin-right: px-to-rem(20px);
+  }
+
+  a {
+    @include set-font-and-line(16px, 19px);
+    font-style: normal;
+  }
+
+  .top-part {
+    padding-top: px-to-rem(80px);
+    padding-bottom: px-to-rem(80px);
+
+    h5 {
+      margin-bottom: px-to-rem(30px);
+      @include set-font-and-line(21px, 18px);
+    }
+
+    li {
+      margin-bottom: px-to-rem(20px);
+    }
+
+    img {
+      margin-right: px-to-rem(21px);
+    }
+  }
+
+  .line {
+    border-bottom: 1px solid $line;
+  }
+
+  .bottom-part {
+    padding-top: px-to-rem(50px);
+    padding-bottom: px-to-rem(50px);
+
+    li {
+      margin-right: px-to-rem(40px);
+    }
+  }
+}

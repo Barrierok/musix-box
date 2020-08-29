@@ -1,0 +1,45 @@
+section.banner {
+  min-height: 100vh;
+  background: url("../images/banner.png") no-repeat center;
+  color: $white;
+  text-align: center;
+
+  h1 {
+    @include set-font-and-line(60px, 70px);
+  }
+
+  h3 {
+    @include set-font-and-line(30px, 35px);
+    margin: px-to-rem(10px 0px);
+  }
+
+  p {
+    @include set-font-and-line(18px, 21px);
+    margin: px-to-rem(35px 0px 10px);
+  }
+}
+
+section.banner form {
+  max-width: px-to-rem(600px);
+  margin: 0 auto;
+
+  input,
+  button {
+    flex: 1 1 px-to-rem(270px);
+    margin: px-to-rem(30px 15px 0px);
+    height: px-to-rem(50px);
+    @include set-font-and-line(14px, 16px);
+  }
+
+  input {
+    background: $banner-border;
+    border-radius: px-to-rem(3px);
+    border: px-to-rem(2px) solid $banner-border;
+    padding: px-to-rem(15px);
+  }
+
+  button {
+    background: $green;
+    color: inherit;
+  }
+}
