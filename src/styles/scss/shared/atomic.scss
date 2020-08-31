@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px;
 
-  @media (max-width: 1219px) {
+  @media (max-width: 1200px) {
     padding: 0 20px;
   }
 }
@@ -32,7 +32,11 @@
 }
 
 .align-items-between {
-  justify-content: space-between;
+  align-items: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
 }
 
 .uppercase {
@@ -49,4 +53,16 @@
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.active {
+  color: $white;
 }

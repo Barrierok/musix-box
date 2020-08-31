@@ -1,34 +1,51 @@
-section.banner {
+.banner {
   min-height: 100vh;
   background: url("../images/banner.png") no-repeat center;
+  background-size: cover;
   color: $white;
-  text-align: center;
+
+  .content {
+    flex: 1 1;
+    margin-top: px-to-rem(50px);
+  }
 
   h1 {
-    @include set-font-and-line(60px, 70px);
+    @include set-font-and-line(60px, 70px, bold, uppercase);
+
+    @media (max-width: 425px) {
+      @include set-font-and-line(30px, 35px, bold, uppercase);
+    }
   }
 
   h3 {
-    @include set-font-and-line(30px, 35px);
+    @include set-font-and-line(30px, 35px, bold, uppercase);
     margin: px-to-rem(10px 0px);
+
+    @media (max-width: 425px) {
+      @include set-font-and-line(18px, 21px, bold, uppercase);
+    }
   }
 
   p {
-    @include set-font-and-line(18px, 21px);
+    @include set-font-and-line(18px, 21px, bold);
     margin: px-to-rem(35px 0px 10px);
+
+    @media (max-width: 425px) {
+      @include set-font-and-line(12px, 14px, bold);
+    }
   }
 }
 
-section.banner form {
+.banner form {
   max-width: px-to-rem(600px);
-  margin: 0 auto;
+  margin-bottom: px-to-rem(50px);
 
   input,
   button {
+    @include set-font-and-line(14px, 16px, bold);
     flex: 1 1 px-to-rem(270px);
     margin: px-to-rem(30px 15px 0px);
     height: px-to-rem(50px);
-    @include set-font-and-line(14px, 16px);
   }
 
   input {
@@ -41,5 +58,6 @@ section.banner form {
   button {
     background: $green;
     color: inherit;
+    text-transform: uppercase;
   }
 }

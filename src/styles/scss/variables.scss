@@ -12,9 +12,11 @@ $brown: #95390c;
 $red: #ff4157;
 $purple: #5328a1;
 $gradient: linear-gradient(89.02deg, #5328a1 32.83%, #95390c 81.56%);
-$rem-base: 10px;
 $line: #eee;
+$line-info: #B8B8B8;
 $background-main: #08020D;
+$border-news-button: #E9E9E9;
+$rem-base: 10px;
 
 * {
   box-sizing: border-box;
@@ -22,7 +24,7 @@ $background-main: #08020D;
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 10px;
+  font-size: $rem-base;
 }
 
 body, h1, h2, h3, h4, p, ul {
@@ -63,7 +65,9 @@ input::placeholder {
   @return #{$result};
 }
 
-@mixin set-font-and-line($font, $line) {
+@mixin set-font-and-line($font, $line, $font-weight: normal, $text-transform: none) {
   font-size: px-to-rem($font);
   line-height: px-to-rem($line);
+  font-weight: $font-weight;
+  text-transform: $text-transform;
 }

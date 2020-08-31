@@ -1,17 +1,14 @@
 header {
-  @include set-font-and-line(11px, 13px);
+  @include set-font-and-line(11px, 13px, bold, uppercase);
   color: $text-header;
-  margin: 0 auto;
-
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  right: 0;
-  top: px-to-rem(20px);
+  margin-top: 10px;
+  
+  & > * {
+    margin-top: px-to-rem(20px);
+  }
 
   .logo {
-    min-width: px-to-rem(80px);
-    flex: 2 1;
+    flex: 1 0 px-to-rem(100px);
 
     img {
       height: px-to-rem(17px);
@@ -22,13 +19,19 @@ header {
     img, span {
       cursor: pointer;
     }
+
+    span {
+      padding: px-to-rem(5px 0px);
+    }
   }
 
   nav {
-    flex: 8 2;
+    flex: 6 2 px-to-rem(350px);
+    margin-left: px-to-rem(-36px);
 
     li {
-      margin-right: px-to-rem(36px);
+      padding: px-to-rem(5px 0px);
+      margin-left: px-to-rem(36px);
     }
   }
 
@@ -38,5 +41,25 @@ header {
     height: px-to-rem(25px);
     background-color: $input-header;
     padding: px-to-rem(0px 15px);
+  }
+
+  @media (max-width: 425px) {
+    .logo {
+      flex: 1 1 100%;
+    }
+
+    nav {
+      flex: 1 1 100%;
+      order: 2;
+
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    input {
+      flex: 1 1 100%;
+      order: 1;
+    }
   }
 }
