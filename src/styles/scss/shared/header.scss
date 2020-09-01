@@ -4,16 +4,16 @@ header {
   margin-top: 10px;
   
   & > * {
-    margin-top: px-to-rem(20px);
+    margin-top: (20px);
   }
 
   .logo {
-    flex: 1 0 px-to-rem(100px);
+    flex: 1 0 (100px);
 
     img {
-      height: px-to-rem(17px);
-      width: px-to-rem(19px);
-      margin-right: px-to-rem(5px);
+      height: (17px);
+      width: (19px);
+      margin-right: (5px);
     }
 
     img, span {
@@ -21,26 +21,26 @@ header {
     }
 
     span {
-      padding: px-to-rem(5px 0px);
+      padding: (5px 0);
     }
   }
 
   nav {
-    flex: 6 2 px-to-rem(350px);
-    margin-left: px-to-rem(-36px);
+    flex: 6 2 (350px);
+    margin-left: (-36px);
 
     li {
-      padding: px-to-rem(5px 0px);
-      margin-left: px-to-rem(36px);
+      padding: (5px 0);
+      margin-left: (36px);
     }
   }
 
   input {
-    flex: 1 1 px-to-rem(200px);
-    border-radius: px-to-rem(50px);
-    height: px-to-rem(25px);
+    flex: 1 1 (200px);
+    border-radius: (50px);
+    height: (25px);
     background-color: $input-header;
-    padding: px-to-rem(0px 15px);
+    padding: (0 15px);
   }
 
   @media (max-width: 425px) {

@@ -6,7 +6,7 @@
 
   .content {
     flex: 1 1;
-    margin-top: px-to-rem(50px);
+    margin-top: 50px;
   }
 
   h1 {
@@ -19,7 +19,7 @@
 
   h3 {
     @include set-font-and-line(30px, 35px, bold, uppercase);
-    margin: px-to-rem(10px 0px);
+    margin: 10px 0;
 
     @media (max-width: 425px) {
       @include set-font-and-line(18px, 21px, bold, uppercase);
@@ -28,7 +28,7 @@
 
   p {
     @include set-font-and-line(18px, 21px, bold);
-    margin: px-to-rem(35px 0px 10px);
+    margin: 35px 0 10px;
 
     @media (max-width: 425px) {
       @include set-font-and-line(12px, 14px, bold);
@@ -37,22 +37,22 @@
 }
 
 .banner-home form {
-  max-width: px-to-rem(600px);
-  margin-bottom: px-to-rem(50px);
+  max-width: 600px;
+  margin-bottom: 50px;
 
   input,
   button {
     @include set-font-and-line(14px, 16px, bold);
-    flex: 1 1 px-to-rem(270px);
-    margin: px-to-rem(30px 15px 0px);
-    height: px-to-rem(50px);
+    flex: 1 1 270px;
+    margin: 30px 15px 0;
+    height: 50px;
   }
 
   input {
     background: $banner-border;
-    border-radius: px-to-rem(3px);
-    border: px-to-rem(2px) solid $banner-border;
-    padding: px-to-rem(15px);
+    border-radius: (3px);
+    border: 2px solid $banner-border;
+    padding: 15px;
   }
 
   button {

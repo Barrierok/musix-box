@@ -1,7 +1,7 @@
 main.home {
   background: $background-main;
   color: $white;
-  padding-bottom: px-to-rem(100px);
+  padding-bottom: 100px;
 
   h2 {
     @include set-font-and-line(38px, 45px, bold, uppercase);
@@ -13,12 +13,12 @@ main.home {
   }
 
   .box {
-    margin-left: px-to-rem(-70px);
+    margin-left: -70px;
 
     & > * {
-      flex: 1 1 px-to-rem(350px);
-      margin-top: px-to-rem(50px);
-      margin-left: px-to-rem(70px);
+      flex: 1 1 350px;
+      margin-top: 50px;
+      margin-left: 70px;
     }
   }
 }
@@ -26,7 +26,7 @@ main.home {
 main.home .subscription {
   p {
     @include set-font-and-line(22px, 26px);
-    margin-top: px-to-rem(50px);
+    margin-top: 50px;
 
     @media (max-width: 425px) {
       @include set-font-and-line(12px, 14px);
@@ -35,19 +35,19 @@ main.home .subscription {
 
   .box .card {
     position: relative;
-    max-width: px-to-rem(360px);
-    min-height: px-to-rem(580px);
-    border-radius: px-to-rem(10px);
-    padding: px-to-rem(0px 25px);
+    max-width: 360px;
+    min-height: 580px;
+    border-radius: 10px;
+    padding: 0 25px;
 
     @media (max-width: 425px) {
-      min-height: px-to-rem(464px);
+      min-height: 464px;
     }
 
     h4 {
       @include set-font-and-line(24px, 28px, normal, uppercase);
       position: absolute;
-      top: px-to-rem(24px);
+      top: 24px;
 
       @media (max-width: 425px) {
         @include set-font-and-line(16px, 19px, normal, uppercase);
@@ -57,7 +57,7 @@ main.home .subscription {
     span {
       .number {
         @include set-font-and-line(60px, 60px);
-        margin-right: px-to-rem(10px);
+        margin-right: 10px;
       }
       .money {
         @include set-font-and-line(30px, 35px, normal, uppercase);
@@ -69,22 +69,22 @@ main.home .subscription {
       @include set-font-and-line(24px, 28px, normal, uppercase);
       background: none;
       border: 4px solid $white;
-      margin-top: px-to-rem(40px);
-      padding: px-to-rem(21px 0px);
+      margin-top: 40px;
+      padding: 21px 0;
       
       @media (max-width: 425px) {
         @include set-font-and-line(12px, 14px, normal, uppercase);
-        padding: px-to-rem(16px 0px);
+        padding: 16px 0;
       }
     }
 
     p {
       @include set-font-and-line(11px, 13px);
-      margin-top: px-to-rem(35px);
-      margin-bottom: px-to-rem(60px);
+      margin-top: 35px;
+      margin-bottom: 60px;
 
       @media (max-width: 425px) {
-        margin-bottom: px-to-rem(15px);
+        margin-bottom: 15px;
       }
     }
   }
@@ -108,7 +108,7 @@ main.home .subscription {
 main.home .news .box {
   h3 {
     @include set-font-and-line(30px, 35px);
-    margin-bottom: px-to-rem(25px);
+    margin-bottom: 25px;
   }
 
   p {
@@ -117,14 +117,14 @@ main.home .news .box {
   }
 
   .info {
-    margin-top: px-to-rem(16px); 
+    margin-top: 16px;
 
     & > * {
-      margin-right: px-to-rem(21px);
+      margin-right: 21px;
     }
 
     img {
-      height: px-to-rem(21px);
+      height: 21px;
     }
 
     .site, .date {
@@ -140,15 +140,15 @@ main.home .news .box {
     }
 
     .line {
-      height: px-to-rem(11px);
+      height: 11px;
       border-right: 1px solid $line-info;
     }
   }
 
   button {
     @include set-font-and-line(12px, 28px, bold, uppercase);
-    margin: px-to-rem(45px 0px 10px);
-    padding: px-to-rem(11px 30px);
+    margin: 45px 0 10px;
+    padding: 11px 30px;
     background: none;
     border: 1px solid $border-news-button;
     width: max-content;
@@ -164,15 +164,15 @@ main.home .mobile .box {
   p {
     @include set-font-and-line(16px, 19px);
     color: $gray;
-    margin-bottom: px-to-rem(25px);
+    margin-bottom: 25px;
   }
 
   button {
     @include set-font-and-line(14px, 16px);
     background: $red;
     width: max-content;
-    padding: px-to-rem(19px 60px);
-    border-radius: px-to-rem(30px);
+    padding: 19px 60px;
+    border-radius: 30px;
 
     @media (max-width: 768px) {
       width: auto;
@@ -180,6 +180,6 @@ main.home .mobile .box {
   }
 
   img {
-    height: px-to-rem(230px);
+    height: 230px;
   }
 }
