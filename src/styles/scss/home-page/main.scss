@@ -1,4 +1,4 @@
-main {
+main.home {
   background: $background-main;
   color: $white;
   padding-bottom: px-to-rem(100px);
@@ -23,7 +23,7 @@ main {
   }
 }
 
-.subscription {
+main.home .subscription {
   p {
     @include set-font-and-line(22px, 26px);
     margin-top: px-to-rem(50px);
@@ -105,7 +105,7 @@ main {
   }
 }
 
-.news .box {
+main.home .news .box {
   h3 {
     @include set-font-and-line(30px, 35px);
     margin-bottom: px-to-rem(25px);
@@ -160,7 +160,7 @@ main {
   }
 }
 
-.mobile .box {
+main.home .mobile .box {
   p {
     @include set-font-and-line(16px, 19px);
     color: $gray;
@@ -181,6 +181,5 @@ main {
 
   img {
     height: px-to-rem(230px);
-    width: px-to-rem(300px);
   }
 }

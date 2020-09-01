@@ -212,31 +212,31 @@ footer .bottom-part ul li {
   padding: 1rem 0rem;
 }
 
-.banner {
+.banner-home {
   min-height: 100vh;
   background: url("../images/banner.png") no-repeat center;
   background-size: cover;
   color: #fff;
 }
-.banner .content {
+.banner-home .content {
   flex: 1 1;
   margin-top: 5rem;
 }
-.banner h1 {
+.banner-home h1 {
   font-size: 6rem;
   line-height: 7rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 @media (max-width: 425px) {
-  .banner h1 {
+  .banner-home h1 {
     font-size: 3rem;
     line-height: 3.5rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 }
-.banner h3 {
+.banner-home h3 {
   font-size: 3rem;
   line-height: 3.5rem;
   font-weight: bold;
@@ -244,14 +244,14 @@ footer .bottom-part ul li {
   margin: 1rem 0rem;
 }
 @media (max-width: 425px) {
-  .banner h3 {
+  .banner-home h3 {
     font-size: 1.8rem;
     line-height: 2.1rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 }
-.banner p {
+.banner-home p {
   font-size: 1.8rem;
   line-height: 2.1rem;
   font-weight: bold;
@@ -259,7 +259,7 @@ footer .bottom-part ul li {
   margin: 3.5rem 0rem 1rem;
 }
 @media (max-width: 425px) {
-  .banner p {
+  .banner-home p {
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-weight: bold;
@@ -267,12 +267,12 @@ footer .bottom-part ul li {
   }
 }
 
-.banner form {
+.banner-home form {
   max-width: 60rem;
   margin-bottom: 5rem;
 }
-.banner form input,
-.banner form button {
+.banner-home form input,
+.banner-home form button {
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: bold;
@@ -281,24 +281,24 @@ footer .bottom-part ul li {
   margin: 3rem 1.5rem 0rem;
   height: 5rem;
 }
-.banner form input {
+.banner-home form input {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.3rem;
   border: 0.2rem solid rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
 }
-.banner form button {
+.banner-home form button {
   background: #34c176;
   color: inherit;
   text-transform: uppercase;
 }
 
-main {
+main.home {
   background: #08020D;
   color: #fff;
   padding-bottom: 10rem;
 }
-main h2 {
+main.home h2 {
   font-size: 3.8rem;
   line-height: 4.5rem;
   font-weight: bold;
@@ -306,23 +306,23 @@ main h2 {
   margin-top: 100px;
 }
 @media (max-width: 425px) {
-  main h2 {
+  main.home h2 {
     font-size: 2rem;
     line-height: 2.3rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 }
-main .box {
+main.home .box {
   margin-left: -7rem;
 }
-main .box > * {
+main.home .box > * {
   flex: 1 1 35rem;
   margin-top: 5rem;
   margin-left: 7rem;
 }
 
-.subscription p {
+main.home .subscription p {
   font-size: 2.2rem;
   line-height: 2.6rem;
   font-weight: normal;
@@ -330,14 +330,14 @@ main .box > * {
   margin-top: 5rem;
 }
 @media (max-width: 425px) {
-  .subscription p {
+  main.home .subscription p {
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-weight: normal;
     text-transform: none;
   }
 }
-.subscription .box .card {
+main.home .subscription .box .card {
   position: relative;
   max-width: 36rem;
   min-height: 58rem;
@@ -345,11 +345,11 @@ main .box > * {
   padding: 0rem 2.5rem;
 }
 @media (max-width: 425px) {
-  .subscription .box .card {
+  main.home .subscription .box .card {
     min-height: 46.4rem;
   }
 }
-.subscription .box .card h4 {
+main.home .subscription .box .card h4 {
   font-size: 2.4rem;
   line-height: 2.8rem;
   font-weight: normal;
@@ -358,28 +358,28 @@ main .box > * {
   top: 2.4rem;
 }
 @media (max-width: 425px) {
-  .subscription .box .card h4 {
+  main.home .subscription .box .card h4 {
     font-size: 1.6rem;
     line-height: 1.9rem;
     font-weight: normal;
     text-transform: uppercase;
   }
 }
-.subscription .box .card span .number {
+main.home .subscription .box .card span .number {
   font-size: 6rem;
   line-height: 6rem;
   font-weight: normal;
   text-transform: none;
   margin-right: 1rem;
 }
-.subscription .box .card span .money {
+main.home .subscription .box .card span .money {
   font-size: 3rem;
   line-height: 3.5rem;
   font-weight: normal;
   text-transform: uppercase;
   vertical-align: top;
 }
-.subscription .box .card button {
+main.home .subscription .box .card button {
   font-size: 2.4rem;
   line-height: 2.8rem;
   font-weight: normal;
@@ -390,7 +390,7 @@ main .box > * {
   padding: 2.1rem 0rem;
 }
 @media (max-width: 425px) {
-  .subscription .box .card button {
+  main.home .subscription .box .card button {
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-weight: normal;
@@ -398,7 +398,7 @@ main .box > * {
     padding: 1.6rem 0rem;
   }
 }
-.subscription .box .card p {
+main.home .subscription .box .card p {
   font-size: 1.1rem;
   line-height: 1.3rem;
   font-weight: normal;
@@ -407,63 +407,63 @@ main .box > * {
   margin-bottom: 6rem;
 }
 @media (max-width: 425px) {
-  .subscription .box .card p {
+  main.home .subscription .box .card p {
     margin-bottom: 1.5rem;
   }
 }
-.subscription .free {
+main.home .subscription .free {
   background: url("../images/subscribe_1.png") no-repeat center;
   background-size: cover;
 }
-.subscription .standart {
+main.home .subscription .standart {
   background: url("../images/subscribe_2.png") no-repeat center;
   background-size: cover;
 }
-.subscription .premium {
+main.home .subscription .premium {
   background: url("../images/subscribe_3.png") no-repeat center;
   background-size: cover;
 }
 
-.news .box h3 {
+main.home .news .box h3 {
   font-size: 3rem;
   line-height: 3.5rem;
   font-weight: normal;
   text-transform: none;
   margin-bottom: 2.5rem;
 }
-.news .box p {
+main.home .news .box p {
   font-size: 1.4rem;
   line-height: 2.8rem;
   font-weight: normal;
   text-transform: none;
   color: #8c8c8c;
 }
-.news .box .info {
+main.home .news .box .info {
   margin-top: 1.6rem;
 }
-.news .box .info > * {
+main.home .news .box .info > * {
   margin-right: 2.1rem;
 }
-.news .box .info img {
+main.home .news .box .info img {
   height: 2.1rem;
 }
-.news .box .info .site, .news .box .info .date {
+main.home .news .box .info .site, main.home .news .box .info .date {
   font-size: 1.2rem;
   line-height: 2.8rem;
   font-weight: normal;
   text-transform: uppercase;
 }
-.news .box .info .site {
+main.home .news .box .info .site {
   color: #f89202;
 }
-.news .box .info .date {
+main.home .news .box .info .date {
   color: #555;
 }
-.news .box .info .line {
+main.home .news .box .info .line {
   height: 1.1rem;
   border-right: 1px solid #B8B8B8;
 }
-.news .box button {
+main.home .news .box button {
   font-size: 1.2rem;
   line-height: 2.8rem;
   font-weight: bold;
@@ -476,12 +476,12 @@ main .box > * {
   color: #8c8c8c;
 }
 @media (max-width: 768px) {
-  .news .box button {
+  main.home .news .box button {
     width: auto;
   }
 }
 
-.mobile .box p {
+main.home .mobile .box p {
   font-size: 1.6rem;
   line-height: 1.9rem;
   font-weight: normal;
@@ -489,7 +489,7 @@ main .box > * {
   color: #8c8c8c;
   margin-bottom: 2.5rem;
 }
-.mobile .box button {
+main.home .mobile .box button {
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: normal;
@@ -500,13 +500,12 @@ main .box > * {
   border-radius: 3rem;
 }
 @media (max-width: 768px) {
-  .mobile .box button {
+  main.home .mobile .box button {
     width: auto;
   }
 }
-.mobile .box img {
+main.home .mobile .box img {
   height: 23rem;
-  width: 30rem;
 }
 
 /*# sourceMappingURL=style.css.map */
