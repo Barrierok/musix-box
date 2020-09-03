@@ -55,6 +55,13 @@ $rem-base: 10px;
   }
 }
 
+@mixin set-background-sub($class, $png) {
+  .#{$class} {
+    background: url("../images/#{$png}") no-repeat center;
+    background-size: cover;
+  }
+}
+
 @mixin set-box(
   $left,
   $bottom,

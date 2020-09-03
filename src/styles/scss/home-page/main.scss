@@ -64,19 +64,9 @@ main.home .subscription {
     }
   }
 
-  .free {
-    background: url("../images/subscribe_1.png") no-repeat center;
-    background-size: cover;
-  }
-
-  .standart {
-    background: url("../images/subscribe_2.png") no-repeat center;
-    background-size: cover;
-  }
-
-  .premium {
-    background: url("../images/subscribe_3.png") no-repeat center;
-    background-size: cover;
+  $list: ('free': 'subscribe_1.png', 'standart': 'subscribe_2.png', 'premium': 'subscribe_3.png');
+  @each $class, $png in $list {
+    @include set-background-sub($class, $png);
   }
 }
 
