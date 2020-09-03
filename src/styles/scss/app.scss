@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import './variables';
+@import './shared/utils.scss';
 @import './shared/atomic.scss';
 @import './shared/header.scss';
 @import './shared/footer.scss';
 @import './home-page/banner.scss';
 @import './home-page/main.scss';
+@import './artists-page/banner.scss';
+@import './artists-page/main.scss';

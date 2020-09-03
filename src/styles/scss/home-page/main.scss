@@ -1,23 +1,10 @@
 main.home {
-  background: $background-main;
-  color: $white;
-  padding-bottom: 100px;
-
-  h2 {
-    @include set-font-and-line(38px, 45px, bold, uppercase);
-    margin-top: 100px;
-
-    @media (max-width: 425px) {
-      @include set-font-and-line(20px, 23px, bold, uppercase);
-    }
-  }
-
   .box {
     margin-left: -70px;
 
     & > * {
       flex: 1 1 350px;
-      margin-top: 50px;
+      margin-bottom: 50px;
       margin-left: 70px;
     }
   }
@@ -26,7 +13,6 @@ main.home {
 main.home .subscription {
   p {
     @include set-font-and-line(22px, 26px);
-    margin-top: 50px;
 
     @media (max-width: 425px) {
       @include set-font-and-line(12px, 14px);

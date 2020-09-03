@@ -1,0 +1,92 @@
+.tracks .box {
+  margin-left: -70px;
+  margin-bottom: -25px;
+
+  & > * {
+    flex: 1 1 370px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+  }
+
+  .track {
+    max-width: 565px;
+  
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .info {
+      flex: 1 1;
+      margin-left: 17px;
+  
+      .title {
+        @include set-font-and-line(14px, 16px);
+      }
+      .name {
+        @include set-font-and-line(12px, 14px);
+        color: $text-header;
+      }
+    }
+  
+    .time {
+      @include set-font-and-line(14px, 16px);
+      margin: auto 0;
+      color: $gray;
+    }
+  }
+}
+
+.discography .box, .similar .box {
+  margin-left: -50px;
+  margin-bottom: -50px;
+
+  .albom, .artist {
+    flex: 1 1 205px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+
+    h6 {
+      @include set-font-and-line(20px, 23px, bold);
+      margin: 10px 0;
+
+      @media (max-width: 425px) {
+        @include set-font-and-line(16px, 19px, bold);
+      }
+    }
+
+    p {
+      @include set-font-and-line(16px, 19px);
+
+      @media (max-width: 425px) {
+        @include set-font-and-line(14px, 16px);
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin-left: -20px;
+
+    .albom, .artist {
+      flex: 1 1 130px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.discography .box {
+  .image-container  {
+    position: relative;
+  
+    &::before {
+      content: '';
+      background-image: url('../images/play-button.svg');
+      width: 25px;
+      height: 25px;
+  
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+}

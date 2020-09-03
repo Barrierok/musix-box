@@ -27,7 +27,7 @@ html {
   font-size: $rem-base;
 }
 
-body, h1, h2, h3, h4, p, ul {
+body, h1, h2, h3, h4, h6, p, ul, button {
   margin: 0;
   padding: 0;
 }
@@ -53,21 +53,4 @@ input,
 button,
 input::placeholder {
   color: inherit;
-}
-
-@function px-to-rem($list) {
-  $result: ();
-
-  @each $value in $list {
-    $result: append($result, (($value / $rem-base) * 1rem));
-  }
-
-  @return #{$result};
-}
-
-@mixin set-font-and-line($font, $line, $font-weight: normal, $text-transform: none) {
-  font-size: px-to-rem($font);
-  line-height: px-to-rem($line);
-  font-weight: $font-weight;
-  text-transform: $text-transform;
 }

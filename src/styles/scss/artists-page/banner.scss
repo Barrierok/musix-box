@@ -1,0 +1,35 @@
+.banner-artists {
+  @include set-banner(550px, 'Morten Harket.png');
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  .content div {
+    margin: 15px 0 100px -35px;
+    max-width: 470px;
+
+    button {
+      @include set-font-and-line(14px, 16px, normal, uppercase);
+  
+      display: inline-flex;
+      align-items: center;
+      margin-left: 35px;
+      margin-top: 25px;
+      flex: 1 1 200px;
+  
+      img {
+        height: 20px;
+        margin: 15px;
+      }
+    }
+  
+    .play {
+      background: #5328A1;
+    }
+  
+    .heart {
+      background: #95390C;
+    }
+  }
+}

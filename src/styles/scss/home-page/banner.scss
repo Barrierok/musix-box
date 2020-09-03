@@ -1,21 +1,5 @@
 .banner-home {
-  min-height: 100vh;
-  background: url("../images/banner.png") no-repeat center;
-  background-size: cover;
-  color: $white;
-
-  .content {
-    flex: 1 1;
-    margin-top: 50px;
-  }
-
-  h1 {
-    @include set-font-and-line(60px, 70px, bold, uppercase);
-
-    @media (max-width: 425px) {
-      @include set-font-and-line(30px, 35px, bold, uppercase);
-    }
-  }
+  @include set-banner(100vh, 'banner.png');
 
   h3 {
     @include set-font-and-line(30px, 35px, bold, uppercase);
@@ -27,37 +11,32 @@
   }
 
   p {
-    @include set-font-and-line(18px, 21px, bold);
     margin: 35px 0 10px;
+  }
 
-    @media (max-width: 425px) {
-      @include set-font-and-line(12px, 14px, bold);
+  form {
+    max-width: 600px;
+    margin-bottom: 50px;
+  
+    input,
+    button {
+      @include set-font-and-line(14px, 16px, bold);
+      flex: 1 1 270px;
+      margin: 30px 15px 0;
+      height: 50px;
     }
-  }
-}
-
-.banner-home form {
-  max-width: 600px;
-  margin-bottom: 50px;
-
-  input,
-  button {
-    @include set-font-and-line(14px, 16px, bold);
-    flex: 1 1 270px;
-    margin: 30px 15px 0;
-    height: 50px;
-  }
-
-  input {
-    background: $banner-border;
-    border-radius: (3px);
-    border: 2px solid $banner-border;
-    padding: 15px;
-  }
-
-  button {
-    background: $green;
-    color: inherit;
-    text-transform: uppercase;
+  
+    input {
+      background: $banner-border;
+      border-radius: (3px);
+      border: 2px solid $banner-border;
+      padding: 15px;
+    }
+  
+    button {
+      background: $green;
+      color: inherit;
+      text-transform: uppercase;
+    }
   }
 }
