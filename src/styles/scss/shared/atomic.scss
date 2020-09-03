@@ -55,11 +55,6 @@
   width: 100%;
 }
 
-.empty {
-  margin: 0;
-  padding: 0;
-}
-
 .wrap {
   flex-wrap: wrap;
 }
@@ -74,4 +69,8 @@
 
 .active {
   color: $white;
+}
+
+.btn-adapt {
+  
 }

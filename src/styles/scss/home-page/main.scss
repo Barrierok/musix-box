@@ -1,17 +1,11 @@
-main.home {
-  .box {
-    margin-left: -70px;
-
-    & > * {
-      flex: 1 1 350px;
-      margin-bottom: 50px;
-      margin-left: 70px;
-    }
-  }
-}
-
 main.home .subscription {
+  .box {
+    @include set-box(70px, 50px, 350px, 70px, 50px, 350px);
+  }
+
   p {
+    margin-top: 50px;
+
     @include set-font-and-line(22px, 26px);
 
     @media (max-width: 425px) {
@@ -21,7 +15,7 @@ main.home .subscription {
 
   .box .card {
     position: relative;
-    max-width: 360px;
+    max-width: 350px;
     min-height: 580px;
     border-radius: 10px;
     padding: 0 25px;
@@ -31,13 +25,8 @@ main.home .subscription {
     }
 
     h4 {
-      @include set-font-and-line(24px, 28px, normal, uppercase);
       position: absolute;
       top: 24px;
-
-      @media (max-width: 425px) {
-        @include set-font-and-line(16px, 19px, normal, uppercase);
-      }
     }
 
     span {
@@ -92,18 +81,25 @@ main.home .subscription {
 }
 
 main.home .news .box {
+  @include set-box(70px, 50px, 350px, 70px, 20px, 350px);
+
+  &:nth-child(n + 1) {
+    margin-top: 40px;
+  }
+
   h3 {
-    @include set-font-and-line(30px, 35px);
-    margin-bottom: 25px;
+    text-transform: none;
+    font-weight: normal;
   }
 
   p {
     @include set-font-and-line(14px, 28px);
+    margin-top: 25px;
     color: $gray;
   }
 
   .info {
-    margin-top: 16px;
+    margin-top: 16px;    
 
     & > * {
       margin-right: 21px;
@@ -133,20 +129,17 @@ main.home .news .box {
 
   button {
     @include set-font-and-line(12px, 28px, bold, uppercase);
-    margin: 45px 0 10px;
+    margin-top: 30px;
     padding: 11px 30px;
     background: none;
     border: 1px solid $border-news-button;
-    width: max-content;
     color: $gray;
-
-    @media (max-width: 768px) {
-      width: auto;
-    }
   }
 }
 
 main.home .mobile .box {
+  @include set-box(70px, 50px, 350px, 70px, 50px, 350px);
+
   p {
     @include set-font-and-line(16px, 19px);
     color: $gray;
@@ -156,13 +149,8 @@ main.home .mobile .box {
   button {
     @include set-font-and-line(14px, 16px);
     background: $red;
-    width: max-content;
     padding: 19px 60px;
     border-radius: 30px;
-
-    @media (max-width: 768px) {
-      width: auto;
-    }
   }
 
   img {

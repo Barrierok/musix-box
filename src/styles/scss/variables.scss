@@ -18,6 +18,72 @@ $background-main: #08020D;
 $border-news-button: #E9E9E9;
 $rem-base: 10px;
 
+@function px-to-rem($list) {
+  $result: ();
+
+  @each $value in $list {
+    $result: append($result, (($value / $rem-base) * 1rem));
+  }
+
+  @return #{$result};
+}
+
+@mixin set-font-and-line($font, $line, $font-weight: normal, $text-transform: none) {
+  font-size: px-to-rem($font);
+  line-height: px-to-rem($line);
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+}
+
+@mixin set-banner($height, $image) {
+  min-height: $height;
+  background: url("../images/#{$image}") no-repeat center;
+  background-size: cover;
+  color: $white;
+
+  .content {
+    flex: 1 1;
+    margin-top: 50px;
+  }
+
+  p {
+    @include set-font-and-line(18px, 21px, bold);
+
+    @media (max-width: 425px) {
+      @include set-font-and-line(12px, 14px, bold);
+    }
+  }
+}
+
+@mixin set-box(
+  $left,
+  $bottom,
+  $item-size,
+  $media-left,
+  $media-bottom,
+  $media-item-size,
+) {
+  margin-left: -$left;
+  margin-bottom: -$bottom;
+
+  & > * {
+    flex: 1 1 $item-size;
+    margin-bottom: $bottom;
+    margin-left: $left;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: -$media-left;
+    margin-bottom: -$media-bottom;
+
+    & > * {
+      flex: 1 1 $media-item-size;
+      margin-left: $media-left;
+      margin-bottom: $media-bottom;
+    }
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -53,4 +119,57 @@ input,
 button,
 input::placeholder {
   color: inherit;
+}
+
+main {
+  background: $background-main;
+  color: $white;
+  padding-bottom: 100px; 
+}
+
+h1 {
+  @include set-font-and-line(60px, 70px, bold, uppercase);
+
+  @media (max-width: 425px) {
+    @include set-font-and-line(30px, 35px, bold, uppercase);
+  }
+}
+
+h2 {
+  @include set-font-and-line(38px, 45px, bold, uppercase);
+  margin: 100px 0 50px;
+
+  @media (max-width: 425px) {
+    @include set-font-and-line(20px, 23px, bold, uppercase);
+  }
+}
+
+h3 {
+  @include set-font-and-line(30px, 35px, bold, uppercase);
+
+  @media (max-width: 425px) {
+    @include set-font-and-line(18px, 21px, bold, uppercase);
+  }
+}
+
+h4 {
+  @include set-font-and-line(24px, 28px, normal, uppercase);
+
+  @media (max-width: 425px) {
+    @include set-font-and-line(16px, 19px, normal, uppercase);
+  }
+}
+
+h5 {
+  @include set-font-and-line(21px, 18px, bold);
+  margin-bottom: 30px;
+}
+
+h6 {
+  @include set-font-and-line(20px, 23px, bold);
+  margin: 10px 0;
+
+  @media (max-width: 425px) {
+    @include set-font-and-line(16px, 19px, bold);
+  }
 }

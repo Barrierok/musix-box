@@ -4,7 +4,7 @@ footer {
 
   section {
     flex: 1 1;
-    margin-right: (20px);
+    margin-right: 20px;
   }
 
   a {
@@ -13,21 +13,16 @@ footer {
   }
 
   .top-part {
-    padding-top: (80px 0);
-    padding-bottom: (80px);
-
-    h5 {
-      margin-bottom: (30px);
-      @include set-font-and-line(21px, 18px, bold);
-    }
+    padding-top: 80px 0;
+    padding-bottom: 80px;
 
     li {
-      margin-bottom: (20px);
+      margin-bottom: 20px;
       white-space: nowrap;
     }
 
     img {
-      margin-right: (20px);
+      margin-right: 20px;
     }
   }
 
@@ -44,8 +39,8 @@ footer {
       }
 
       li {
-        margin-right: (40px);
-        padding: (10px 0);
+        margin-right: 40px;
+        padding: 10px 0;
       }
     }
   }

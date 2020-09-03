@@ -1,16 +1,7 @@
 .tracks .box {
-  margin-left: -70px;
-  margin-bottom: -25px;
+  @include set-box(70px, 25px, 355px, 70px, 25px, 355px);
 
-  & > * {
-    flex: 1 1 370px;
-    margin-bottom: 25px;
-    margin-left: 70px;
-  }
-
-  .track {
-    max-width: 565px;
-  
+  .track {  
     img {
       width: 50px;
       height: 50px;
@@ -23,6 +14,7 @@
       .title {
         @include set-font-and-line(14px, 16px);
       }
+
       .name {
         @include set-font-and-line(12px, 14px);
         color: $text-header;
@@ -38,38 +30,15 @@
 }
 
 .discography .box, .similar .box {
-  margin-left: -50px;
-  margin-bottom: -50px;
+  @include set-box(50px, 50px, 250px, 20px, 50px, 130px);
 
   .albom, .artist {
-    flex: 1 1 205px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-
-    h6 {
-      @include set-font-and-line(20px, 23px, bold);
-      margin: 10px 0;
-
-      @media (max-width: 425px) {
-        @include set-font-and-line(16px, 19px, bold);
-      }
-    }
-
     p {
       @include set-font-and-line(16px, 19px);
 
       @media (max-width: 425px) {
         @include set-font-and-line(14px, 16px);
       }
-    }
-  }
-
-  @media (max-width: 500px) {
-    margin-left: -20px;
-
-    .albom, .artist {
-      flex: 1 1 130px;
-      margin-left: 20px;
     }
   }
 }
@@ -87,6 +56,17 @@
       position: absolute;
       bottom: 10px;
       left: 10px;
+
+      @media (max-width: 425px) {
+        width: 15px;
+        height: 15px;
+        bottom: 5px;
+        left: 5px;
+      }
     }
+  }
+
+  .empty {
+    margin-bottom: 0;
   }
 }

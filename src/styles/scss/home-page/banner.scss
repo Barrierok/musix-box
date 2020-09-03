@@ -2,12 +2,7 @@
   @include set-banner(100vh, 'banner.png');
 
   h3 {
-    @include set-font-and-line(30px, 35px, bold, uppercase);
     margin: 10px 0;
-
-    @media (max-width: 425px) {
-      @include set-font-and-line(18px, 21px, bold, uppercase);
-    }
   }
 
   p {
