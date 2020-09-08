@@ -1,11 +1,6 @@
-footer {
+.main-footer {
   background: $gradient;
   color: $text-footer;
-
-  section {
-    flex: 1 1;
-    margin-right: 20px;
-  }
 
   a {
     @include set-font-and-line(16px, 19px);
@@ -13,16 +8,28 @@ footer {
   }
 
   .top-part {
-    padding-top: 80px 0;
-    padding-bottom: 80px;
+    padding-top: px-to-rem(50px);
+    padding-bottom: px-to-rem(80px);
+    margin-left: -20px;
+
+    & > div {
+      flex: 1 1;
+      margin-left: px-to-rem(20px);
+    }
+
+    span {
+      @include set-font-and-line(21px, 18px, bold);
+      display: inline-block;
+      margin: px-to-rem(30px 0px);
+    }
 
     li {
-      margin-bottom: 20px;
+      margin-bottom: px-to-rem(20px);
       white-space: nowrap;
     }
 
     img {
-      margin-right: 20px;
+      margin-right: px-to-rem(20px);
     }
   }
 
@@ -31,16 +38,18 @@ footer {
   }
 
   .bottom-part {
-    ul {
-      padding: (40px 0);
+    padding-top: px-to-rem(40px);
+    padding-bottom: px-to-rem(40px);
 
+    ul {
       @media (max-width: 425px) {
         flex-direction: column;
       }
+      margin-left: -40px;
 
       li {
-        margin-right: 40px;
-        padding: 10px 0;
+        margin-left: px-to-rem(40px);
+        padding: px-to-rem(10px 0px);
       }
     }
   }

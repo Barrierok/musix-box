@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  max-width: px-to-rem(350px);
+  min-height: px-to-rem(580px);
+  border-radius: px-to-rem(10px);
+  padding: px-to-rem(0px 25px);
+
+  @media (max-width: 425px) {
+    min-height: px-to-rem(464px);
+  }
+
+  .sub-name {
+    @include set-font-and-line(24px, 28px, normal, uppercase);
+    position: absolute;
+    top: px-to-rem(24px);
+
+    @media (max-width: 425px) {
+      @include set-font-and-line(16px, 19px, normal, uppercase);
+    }
+  }
+
+  .number {
+    @include set-font-and-line(60px, 60px);
+    margin-right: px-to-rem(10px);
+  }
+
+  .money {
+    @include set-font-and-line(30px, 35px, normal, uppercase);
+    vertical-align: top;
+  }
+
+  button {
+    @include set-font-and-line(24px, 28px, normal, uppercase);
+    background: none;
+    border: px-to-rem(4px) solid $white;
+    margin-top: px-to-rem(40px);
+    padding: px-to-rem(21px 0px);
+    
+    @media (max-width: 425px) {
+      @include set-font-and-line(12px, 14px, normal, uppercase);
+      padding: px-to-rem(16px 0px);
+    }
+  }
+
+  p {
+    @include set-font-and-line(11px, 13px);
+    margin: px-to-rem(35px 0px 60px);
+
+    @media (max-width: 425px) {
+      margin-bottom: px-to-rem(15px);
+    }
+  }
+}

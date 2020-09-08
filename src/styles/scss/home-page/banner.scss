@@ -1,37 +1,18 @@
+@import '../components/subscrube-form.scss';
+
 .banner-home {
   @include set-banner(100vh, 'banner.png');
 
-  h3 {
+  span {
     margin: 10px 0;
+    @include set-font-and-line(30px, 35px, bold, uppercase);
+
+    @media (max-width: 425px) {
+      @include set-font-and-line(18px, 21px, bold, uppercase);
+    }
   }
 
   p {
-    margin: 35px 0 10px;
-  }
-
-  form {
-    max-width: 600px;
-    margin-bottom: 50px;
-  
-    input,
-    button {
-      @include set-font-and-line(14px, 16px, bold);
-      flex: 1 1 270px;
-      margin: 30px 15px 0;
-      height: 50px;
-    }
-  
-    input {
-      background: $banner-border;
-      border-radius: (3px);
-      border: 2px solid $banner-border;
-      padding: 15px;
-    }
-  
-    button {
-      background: $green;
-      color: inherit;
-      text-transform: uppercase;
-    }
+    margin: px-to-rem(35px 0px 10px);
   }
 }

@@ -2,25 +2,25 @@
   @include set-banner(550px, 'Morten_Harket.png');
 
   p {
-    margin-top: 25px;
+    margin-top: px-to-rem(25px);
   }
 
   .content div {
-    margin: 15px 0 100px -35px;
-    max-width: 470px;
+    margin: px-to-rem(15px 0px 100px -35px);
+    max-width: px-to-rem(470px);
 
     button {
       @include set-font-and-line(14px, 16px, normal, uppercase);
   
       display: inline-flex;
       align-items: center;
-      margin-left: 35px;
-      margin-top: 25px;
-      flex: 1 1 200px;
+      margin-left: px-to-rem(35px);
+      margin-top: px-to-rem(25px);
+      flex: 1 1 px-to-rem(200px);
   
       img {
-        height: 20px;
-        margin: 15px;
+        height: px-to-rem(20px);
+        margin: px-to-rem(15px);
       }
     }
   

@@ -1,0 +1,23 @@
+.albom {
+  .image-container  {
+    position: relative;
+  
+    &::before {
+      content: '';
+      background-image: url('../images/play-button.svg');
+      width: 25px;
+      height: 25px;
+  
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+
+      @media (max-width: 425px) {
+        width: 15px;
+        height: 15px;
+        bottom: 5px;
+        left: 5px;
+      }
+    }
+  }
+}

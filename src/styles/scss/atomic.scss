@@ -1,9 +1,9 @@
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: px-to-rem(1200px);
 
   @media (max-width: 1200px) {
-    padding: 0 20px;
+    padding: px-to-rem(0px 20px);
   }
 }
 
@@ -73,6 +73,7 @@
 
 .btn-adapt {
   width: max-content;
+
   @media (max-width: 768px) {
     width: auto;
   }
