@@ -45,7 +45,7 @@
       @media (max-width: 425px) {
         flex-direction: column;
       }
-      margin-left: -40px;
+      margin-left: px-to-rem(-40px);
 
       li {
         margin-left: px-to-rem(40px);

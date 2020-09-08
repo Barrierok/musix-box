@@ -4,7 +4,7 @@
   @include set-banner(100vh, 'banner.png');
 
   span {
-    margin: 10px 0;
+    margin: px-to-rem(10px 0px);
     @include set-font-and-line(30px, 35px, bold, uppercase);
 
     @media (max-width: 425px) {

@@ -5,18 +5,18 @@
     &::before {
       content: '';
       background-image: url('../images/play-button.svg');
-      width: 25px;
-      height: 25px;
+      width: px-to-rem(25px);
+      height: px-to-rem(25px);
   
       position: absolute;
-      bottom: 10px;
-      left: 10px;
+      bottom: px-to-rem(10px);
+      left: px-to-rem(10px);
 
       @media (max-width: 425px) {
-        width: 15px;
-        height: 15px;
-        bottom: 5px;
-        left: 5px;
+        width: px-to-rem(15px);
+        height: px-to-rem(15px);
+        bottom: px-to-rem(5px);
+        left: px-to-rem(5px);
       }
     }
   }
