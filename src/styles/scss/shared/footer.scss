@@ -7,15 +7,9 @@
     font-style: normal;
   }
 
-  .top-part {
-    padding-top: px-to-rem(50px);
-    padding-bottom: px-to-rem(80px);
-    margin-left: -20px;
-
-    & > div {
-      flex: 1 1;
-      margin-left: px-to-rem(20px);
-    }
+  .top-part .box {
+    @include set-box(20px, 10px, 200px);
+    padding: px-to-rem(50px 0px 80px);
 
     span {
       @include set-font-and-line(21px, 18px, bold);
@@ -37,20 +31,16 @@
     border-bottom: 1px solid $line;
   }
 
-  .bottom-part {
-    padding-top: px-to-rem(40px);
-    padding-bottom: px-to-rem(40px);
+  .bottom-part ul {
+    padding: px-to-rem(40px 0px);
 
-    ul {
-      @media (max-width: 425px) {
-        flex-direction: column;
-      }
-      margin-left: px-to-rem(-40px);
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
 
-      li {
-        margin-left: px-to-rem(40px);
-        padding: px-to-rem(10px 0px);
-      }
+    li {
+      margin-right: px-to-rem(40px);
+      padding: px-to-rem(10px 0px);
     }
   }
 }

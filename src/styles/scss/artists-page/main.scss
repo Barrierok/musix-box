@@ -2,11 +2,12 @@
 @import  '../components/albom.scss';
 
 .tracks .box {
-  @include set-box(70px, 25px, 355px, 70px, 25px, 355px);
+  @include set-box(70px, 25px, 355px);
 }
 
 .discography .box, .similar .box {
-  @include set-box(50px, 50px, 250px, 20px, 50px, 130px);
+  @include set-box(50px, 50px, 250px);
+  @include set-media-box(20px, 50px, 130px);
 
   h3 {
     @include set-font-and-line(20px, 23px, bold);

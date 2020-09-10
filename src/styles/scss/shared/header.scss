@@ -4,44 +4,41 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin: px-to-rem(10px) auto 0;
+  top: px-to-rem(30px);
+  margin: 0 auto;
   color: $text-header;
   
   & > * {
-    margin-top: px-to-rem(20px);
+    margin-bottom: px-to-rem(20px);
   }
 
   .logo {
-    flex: 1 0 px-to-rem(100px);
-
+    margin-right: px-to-rem(100px);
+  
     img {
-      height: px-to-rem(17px);
-      width: px-to-rem(19px);
+      width: px-to-rem(20px);
       margin-right: px-to-rem(5px);
-    }
-
-    img, span {
-      cursor: pointer;
     }
 
     span {
       padding: px-to-rem(5px 0px);
       color: $white;
     }
+
+    img, span {
+      cursor: pointer;
+    }
   }
 
   nav {
-    flex: 6 2 px-to-rem(350px);
-    margin-left: px-to-rem(-36px);
-
     li {
       padding: px-to-rem(5px 0px);
-      margin-left: px-to-rem(36px);
+      margin-right: px-to-rem(36px);
     }
   }
 
   input {
-    flex: 1 1 px-to-rem(200px);
+    margin-left: auto;
     border-radius: px-to-rem(50px);
     height: px-to-rem(25px);
     background-color: $input-header;
@@ -49,12 +46,11 @@
   }
 
   @media (max-width: 425px) {
-    .logo {
-      flex: 1 1 100%;
+    & > * {
+      width: 100%;
     }
 
     nav {
-      flex: 1 1 100%;
       order: 2;
 
       ul {
@@ -63,7 +59,6 @@
     }
 
     input {
-      flex: 1 1 100%;
       order: 1;
     }
   }

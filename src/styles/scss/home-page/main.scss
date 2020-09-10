@@ -2,7 +2,7 @@
 
 .subscription {
   .box {
-    @include set-box(70px, 50px, 350px, 70px, 50px, 350px);
+    @include set-box(70px, 50px, 350px);
   }
 
   & > p {
@@ -14,14 +14,15 @@
     }
   }
 
-  $list: ('free': 'subscribe_1.png', 'standart': 'subscribe_2.png', 'premium': 'subscribe_3.png');
+  $list: ('free': 'subscribe_1', 'standart': 'subscribe_2', 'premium': 'subscribe_3');
   @each $class, $png in $list {
     @include set-background-sub($class, $png);
   }
 }
 
 .news .box {
-  @include set-box(70px, 50px, 350px, 70px, 20px, 350px);
+  @include set-box(70px, 50px, 350px);
+  @include set-media-box(70px, 20px, 350px);
 
   &:nth-child(n + 1) {
     margin-top: px-to-rem(40px);
@@ -81,7 +82,7 @@
 }
 
 .mobile .box {
-  @include set-box(70px, 50px, 350px, 70px, 50px, 350px);
+  @include set-box(70px, 50px, 350px);
 
   p {
     @include set-font-and-line(16px, 19px);

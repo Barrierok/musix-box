@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   max-width: px-to-rem(1200px);
+  margin: 0 auto;
 
   @media (max-width: 1200px) {
     padding: px-to-rem(0px 20px);
@@ -43,6 +44,10 @@
   align-items: flex-start;
 }
 
+.align-self-end {
+  align-self: flex-end;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -77,4 +82,12 @@
   @media (max-width: 768px) {
     width: auto;
   }
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
 }

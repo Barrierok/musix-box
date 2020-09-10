@@ -23,19 +23,10 @@ $rem-base: 16px;
   background-size: cover;
   color: $white;
 
-  padding-top: px-to-rem(50px);
-
-  @media (max-width: 768px) {
-    padding-top: px-to-rem(100px);
-  }
+  padding: px-to-rem(150px 0px 100px);
 
   @media (max-width: 425px) {
-    padding-top: px-to-rem(200px);
-  }
-
-  .content {
-    flex: 1 1;
-    margin-top: px-to-rem(50px);
+    padding-top: px-to-rem(250px);
   }
 
   p {
@@ -49,36 +40,41 @@ $rem-base: 16px;
 
 @mixin set-background-sub($class, $png) {
   .#{$class} {
-    background: url("../images/#{$png}") no-repeat center;
+    background: url("../images/#{$png}.png") no-repeat center;
     background-size: cover;
   }
 }
 
-@mixin set-box(
-  $left,
-  $bottom,
-  $item-size,
-  $media-left,
-  $media-bottom,
-  $media-item-size,
-) {
+@mixin set-backround-button($name, $color) {
+  .#{$name} {
+    &::before {
+      background-image: url('../images/#{$name}.svg');
+    }
+    background: $color;
+  }
+}
+
+@mixin set-box($left, $bottom, $item-size) {
   margin-left: px-to-rem(-$left);
   margin-bottom: px-to-rem(-$bottom);
 
   & > * {
-    flex: 1 1 px-to-rem($item-size);
+    flex: 1 1 $item-size;
     margin-bottom: px-to-rem($bottom);
     margin-left: px-to-rem($left);
   }
+}
 
+@mixin set-media-box($media-left, $media-bottom, $media-item-size) {
   @media (max-width: 500px) {
     margin-left: px-to-rem(-$media-left);
     margin-bottom: px-to-rem(-$media-bottom);
 
     & > * {
-      flex: 1 1 px-to-rem($media-item-size);
+      flex: 1 1 $media-item-size;
       margin-left: px-to-rem($media-left);
       margin-bottom: px-to-rem($media-bottom);
     }
   }
 }
+
