@@ -168,6 +168,10 @@ h2 {
   margin-bottom: 50px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
 .main-header {
   font-size: 0.6875rem;
   line-height: 0.8125rem;
