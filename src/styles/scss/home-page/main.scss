@@ -3,6 +3,10 @@
 .subscription {
   .box {
     @include set-box(70px, 50px, 350px);
+
+    & > * {
+      max-width: px-to-rem(350px);
+    }
   }
 
   & > p {
@@ -23,10 +27,6 @@
 .news .box {
   @include set-box(70px, 50px, 350px);
   @include set-media-box(70px, 20px, 350px);
-
-  &:nth-child(n + 1) {
-    margin-top: px-to-rem(40px);
-  }
 
   h3 {
     @include set-font-and-line(30px, 35px);
@@ -82,7 +82,7 @@
 }
 
 .mobile .box {
-  @include set-box(70px, 50px, 350px);
+  @include set-box(70px, 50px, 320px);
 
   p {
     @include set-font-and-line(16px, 19px);
