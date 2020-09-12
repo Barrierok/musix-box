@@ -667,6 +667,35 @@ form.sub-form button {
   color: #8c8c8c;
 }
 
+.albom h3 {
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  font-weight: bold;
+  text-transform: none;
+  margin: 0.625rem 0rem;
+}
+@media (max-width: 425px) {
+  .albom h3 {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-weight: bold;
+    text-transform: none;
+  }
+}
+.albom p {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: normal;
+  text-transform: none;
+}
+@media (max-width: 425px) {
+  .albom p {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: normal;
+    text-transform: none;
+  }
+}
 .albom .image-container {
   position: relative;
 }
@@ -685,6 +714,36 @@ form.sub-form button {
     height: 0.9375rem;
     bottom: 0.3125rem;
     left: 0.3125rem;
+  }
+}
+
+.artist h3 {
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  font-weight: bold;
+  text-transform: none;
+  margin: 0.625rem 0rem;
+}
+@media (max-width: 425px) {
+  .artist h3 {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-weight: bold;
+    text-transform: none;
+  }
+}
+.artist p {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: normal;
+  text-transform: none;
+}
+@media (max-width: 425px) {
+  .artist p {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: normal;
+    text-transform: none;
   }
 }
 
@@ -716,35 +775,6 @@ form.sub-form button {
     flex: 1 1 130px;
     margin-left: 1.25rem;
     margin-bottom: 3.125rem;
-  }
-}
-.discography .box h3, .similar .box h3 {
-  font-size: 1.25rem;
-  line-height: 1.4375rem;
-  font-weight: bold;
-  text-transform: none;
-  margin: 0.625rem 0rem;
-}
-@media (max-width: 425px) {
-  .discography .box h3, .similar .box h3 {
-    font-size: 1rem;
-    line-height: 1.1875rem;
-    font-weight: bold;
-    text-transform: none;
-  }
-}
-.discography .box p, .similar .box p {
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  font-weight: normal;
-  text-transform: none;
-}
-@media (max-width: 425px) {
-  .discography .box p, .similar .box p {
-    font-size: 0.875rem;
-    line-height: 1rem;
-    font-weight: normal;
-    text-transform: none;
   }
 }
 
