@@ -55,13 +55,11 @@ $rem-base: 16px;
 }
 
 @mixin set-box($x, $y, $item-size) {
-  margin-left: px-to-rem(-$x);
-  margin-bottom: px-to-rem(-$y);
+  margin: px-to-rem(-$y) px-to-rem(-$x);
 
   & > * {
     flex: 1 1 $item-size;
-    margin-left: px-to-rem($x);
-    margin-bottom: px-to-rem($y);
+    margin: px-to-rem($y $x);
   }
 }
 

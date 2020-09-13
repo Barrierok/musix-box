@@ -239,14 +239,12 @@ h2 {
   font-style: normal;
 }
 .main-footer .top-part .box {
-  margin-left: -1.25rem;
-  margin-bottom: -0.625rem;
+  margin: -0.625rem -1.25rem;
   padding: 3.125rem 0rem 5rem;
 }
 .main-footer .top-part .box > * {
   flex: 1 1 200px;
-  margin-left: 1.25rem;
-  margin-bottom: 0.625rem;
+  margin: 0.625rem 1.25rem;
 }
 .main-footer .top-part .box span {
   font-size: 1.3125rem;
@@ -424,13 +422,11 @@ form.sub-form button {
 }
 
 .subscription .box {
-  margin-left: -4.375rem;
-  margin-bottom: -3.125rem;
+  margin: -3.125rem -4.375rem;
 }
 .subscription .box > * {
   flex: 1 1 350px;
-  margin-left: 4.375rem;
-  margin-bottom: 3.125rem;
+  margin: 3.125rem 4.375rem;
 }
 .subscription .box > * {
   max-width: 21.875rem;
@@ -464,23 +460,19 @@ form.sub-form button {
 }
 
 .news .box {
-  margin-left: -4.375rem;
-  margin-bottom: -3.125rem;
+  margin: -3.125rem -4.375rem;
 }
 .news .box > * {
   flex: 1 1 350px;
-  margin-left: 4.375rem;
-  margin-bottom: 3.125rem;
+  margin: 3.125rem 4.375rem;
 }
 @media (max-width: 500px) {
   .news .box {
-    margin-left: -4.375rem;
-    margin-bottom: -1.25rem;
+    margin: -1.25rem -4.375rem;
   }
   .news .box > * {
     flex: 1 1 350px;
-    margin-left: 4.375rem;
-    margin-bottom: 1.25rem;
+    margin: 1.25rem 4.375rem;
   }
 }
 .news .box h3 {
@@ -543,13 +535,11 @@ form.sub-form button {
 }
 
 .mobile .box {
-  margin-left: -4.375rem;
-  margin-bottom: -3.125rem;
+  margin: -3.125rem -4.375rem;
 }
 .mobile .box > * {
   flex: 1 1 320px;
-  margin-left: 4.375rem;
-  margin-bottom: 3.125rem;
+  margin: 3.125rem 4.375rem;
 }
 .mobile .box p {
   font-size: 1rem;
@@ -602,14 +592,12 @@ form.sub-form button {
   margin: 1.5625rem 0rem 2.5rem;
 }
 .banner-artists .box {
-  margin-left: -2.1875rem;
-  margin-bottom: -1.5625rem;
+  margin: -1.5625rem -2.1875rem;
   max-width: 29.375rem;
 }
 .banner-artists .box > * {
   flex: 1 1 200px;
-  margin-left: 2.1875rem;
-  margin-bottom: 1.5625rem;
+  margin: 1.5625rem 2.1875rem;
 }
 .banner-artists .box button {
   font-size: 0.875rem;
@@ -752,33 +740,27 @@ form.sub-form button {
 }
 
 .tracks .box {
-  margin-left: -4.375rem;
-  margin-bottom: -1.5625rem;
+  margin: -1.5625rem -4.375rem;
 }
 .tracks .box > * {
   flex: 1 1 355px;
-  margin-left: 4.375rem;
-  margin-bottom: 1.5625rem;
+  margin: 1.5625rem 4.375rem;
 }
 
 .discography .box, .similar .box {
-  margin-left: -3.125rem;
-  margin-bottom: -3.125rem;
+  margin: -3.125rem -3.125rem;
 }
 .discography .box > *, .similar .box > * {
   flex: 1 1 250px;
-  margin-left: 3.125rem;
-  margin-bottom: 3.125rem;
+  margin: 3.125rem 3.125rem;
 }
 @media (max-width: 500px) {
   .discography .box, .similar .box {
-    margin-left: -1.25rem;
-    margin-bottom: -3.125rem;
+    margin: -3.125rem -1.25rem;
   }
   .discography .box > *, .similar .box > * {
     flex: 1 1 130px;
-    margin-left: 1.25rem;
-    margin-bottom: 3.125rem;
+    margin: 3.125rem 1.25rem;
   }
 }
 
