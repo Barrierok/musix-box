@@ -1,13 +1,3 @@
-.container {
-  width: 100%;
-  max-width: px-to-rem(1200px);
-  margin: 0 auto;
-
-  @media (max-width: 1200px) {
-    padding: px-to-rem(0px 20px);
-  }
-}
-
 .d-flex {
   display: flex;
 }
@@ -74,14 +64,6 @@
 
 .active {
   color: $white;
-}
-
-.btn-adapt {
-  width: max-content;
-
-  @media (max-width: 768px) {
-    width: auto;
-  }
 }
 
 .mt-100 {

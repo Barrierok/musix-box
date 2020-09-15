@@ -30,7 +30,6 @@
 
   button {
     @include set-font-and-line(24px, 28px, normal, uppercase);
-    background: none;
     border: 4px solid $white;
     margin-top: px-to-rem(40px);
     padding: px-to-rem(21px 0px);

@@ -1,10 +1,12 @@
-.main-header {
-  @include set-font-and-line(11px, 13px, bold, uppercase);
-
+.header-absolute {
   position: absolute;
   left: 0;
   right: 0;
   top: px-to-rem(30px);
+}
+
+.main-header {
+  @include set-font-and-line(11px, 13px, bold, uppercase);
   margin: 0 auto;
   color: $text-header;
   
@@ -27,13 +29,6 @@
 
     img, span {
       cursor: pointer;
-    }
-  }
-
-  nav {
-    li {
-      padding: px-to-rem(5px 0px);
-      margin-right: px-to-rem(36px);
     }
   }
 

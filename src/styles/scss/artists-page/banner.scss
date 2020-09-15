@@ -9,27 +9,14 @@
     @include set-box(35px, 25px, 200px);
     max-width: px-to-rem(470px);
 
-    button {
+    .btn {
       @include set-font-and-line(14px, 16px, normal, uppercase);
-      position: relative;
       text-align: left;
       padding: px-to-rem(17px 50px);
-
-      &::before {
-        content: '';
-        position: absolute;
-
-        width: px-to-rem(20px);
-        height: px-to-rem(20px);
-
-        left: px-to-rem(15px);
-        bottom: calc(50% - 10px);
-      }
     }
 
-    $list: ('play-button': #5328A1, 'heart': #95390C);
-    @each $name, $color in $list {
-      @include set-backround-button($name, $color);
+    .icon {
+      @include set-icon(20px, 20px, 15px, calc(50% - 10px));
     }
   }
 }

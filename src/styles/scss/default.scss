@@ -12,12 +12,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul, button {
   padding: 0;
 }
 
-button, input {
+input {
   border: none;
-}
-
-button {
-  cursor: pointer;
 }
 
 a {
@@ -30,7 +26,6 @@ ul {
 }
 
 input,
-button,
 input::placeholder {
   color: inherit;
 }
@@ -54,5 +49,22 @@ h2 {
 
   @media (max-width: 425px) {
     @include set-font-and-line(20px, 23px, bold, uppercase);
+  }
+}
+
+nav {
+  li {
+    padding: px-to-rem(5px 0px);
+    margin-right: px-to-rem(36px);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: px-to-rem(1200px);
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding: px-to-rem(0px 20px);
   }
 }

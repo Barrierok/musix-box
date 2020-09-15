@@ -27,6 +27,7 @@
 .news .box {
   @include set-box(70px, 50px, 350px);
   @include set-media-box(70px, 20px, 350px);
+  color: $gray;
 
   h3 {
     @include set-font-and-line(30px, 35px);
@@ -39,7 +40,6 @@
   p {
     @include set-font-and-line(14px, 28px);
     margin-top: px-to-rem(25px);
-    color: $gray;
   }
 
   .info {
@@ -75,9 +75,7 @@
     @include set-font-and-line(12px, 28px, bold, uppercase);
     margin-top: px-to-rem(30px);
     padding: px-to-rem(11px 30px);
-    background: none;
     border: 1px solid $border-news-button;
-    color: $gray;
   }
 }
 
@@ -92,7 +90,6 @@
 
   button {
     @include set-font-and-line(14px, 16px);
-    background: $red;
     padding: px-to-rem(19px 60px);
     border-radius: px-to-rem(30px);
   }

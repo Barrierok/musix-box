@@ -16,25 +16,8 @@
     }
   }
 
-  .image-container  {
-    position: relative;
-  
-    &::before {
-      content: '';
-      background-image: url('../images/play-button.svg');
-      width: px-to-rem(25px);
-      height: px-to-rem(25px);
-  
-      position: absolute;
-      bottom: px-to-rem(10px);
-      left: px-to-rem(10px);
-
-      @media (max-width: 425px) {
-        width: px-to-rem(15px);
-        height: px-to-rem(15px);
-        bottom: px-to-rem(5px);
-        left: px-to-rem(5px);
-      }
-    }
+  .icon {
+    @include set-icon(25px, 25px, 10px, 10px);
+    @include set-media-icon(15px, 15px, 5px, 5px);
   }
 }

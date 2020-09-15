@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="main-header container d-flex align-items-center wrap">
+    <header class="header-absolute main-header container d-flex align-items-center wrap">
       <div class="logo d-flex align-items-center">
         <img src="./images/logo.svg" alt="logo" />
         <span>music box</span>
@@ -34,7 +34,7 @@
         <form class="sub-form d-flex wrap">
           <input type="text" placeholder="Имя">
           <input type="email" placeholder="Email">
-          <button type="submit">Получить доступ</button>
+          <button class="btn btn-green" type="submit">Получить доступ</button>
         </form>
       </div>
     </section>
@@ -45,30 +45,30 @@
         <h2 class="mt-100 mb-50">Формы подписки</h2>
         <div class="box d-flex justify-content-center wrap">
 
-          <div class="free card d-flex direction-column justify-content-end align-items-center">
-            <span class="sub-name">Бесплатная</span>
+          <div class="card card-bg-free d-flex direction-column justify-content-end align-items-center">
+            <h3 class="sub-name">Бесплатная</h3>
             <span>
               <span class="number">0</span><span class="money">руб.</span>
             </span>
-            <button class="w-100">Оформить</button>
+            <button class="btn w-100">Оформить</button>
             <p>Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
           </div>
 
-          <div class="standart card d-flex direction-column justify-content-end align-items-center">
-            <span class="sub-name">Стандартная</span>
+          <div class="card card-bg-standart d-flex direction-column justify-content-end align-items-center">
+            <h3 class="sub-name">Стандартная</h3>
             <span>
               <span class="number">250</span><span class="money">руб.</span>
             </span>
-            <button class="w-100">Оформить</button>
+            <button class="btn w-100">Оформить</button>
             <p>Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
           </div>
 
-          <div class="premium card d-flex direction-column justify-content-end align-items-center">
-            <span class="sub-name">Премиум</span>
+          <div class="card card-bg-premium d-flex direction-column justify-content-end align-items-center">
+            <h3 class="sub-name">Премиум</h3>
             <span>
               <span class="number">500</span><span class="money">руб.</span>
             </span>
-            <button class="w-100">Оформить</button>
+            <button class="btn w-100">Оформить</button>
             <p>Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве.</p>
           </div>
 
@@ -91,7 +91,7 @@
               <div class="line"></div>
               <span class="date">17/01/2020</span>
             </div>
-            <button class="btn-adapt">К альбому</button>
+            <button class="btn btn-adapt">К альбому</button>
           </article>
         </div>
         <div class="box d-flex wrap-reverse mt-50">
@@ -104,7 +104,7 @@
               <div class="line"></div>
               <span class="date">24/02/2020</span>
             </div>
-            <button class="btn-adapt">К альбому</button>
+            <button class="btn btn-adapt">К альбому</button>
           </article>
           <div class="d-flex justify-content-center align-items-center">
             <img class="w-100" src="./images/Ordinary_Man.png" alt="Artis Ozzy Ozbourne">
@@ -118,7 +118,7 @@
           <div class="d-flex direction-column justify-content-center">
             <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
             <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
-            <button class="btn-adapt">Скачать</button>
+            <button class="btn btn-adapt btn-red">Скачать</button>
           </div>
           <div class="d-flex justify-content-center align-items-center">
             <img src="./images/iphone.png" alt="iphone">

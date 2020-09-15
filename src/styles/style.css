@@ -13,12 +13,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul, button {
   padding: 0;
 }
 
-button, input {
+input {
   border: none;
-}
-
-button {
-  cursor: pointer;
 }
 
 a {
@@ -31,7 +27,6 @@ ul {
 }
 
 input,
-button,
 input::placeholder {
   color: inherit;
 }
@@ -70,6 +65,11 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
   }
+}
+
+nav li {
+  padding: 0.3125rem 0rem;
+  margin-right: 2.25rem;
 }
 
 .container {
@@ -151,15 +151,6 @@ h2 {
   color: #fff;
 }
 
-.btn-adapt {
-  width: max-content;
-}
-@media (max-width: 768px) {
-  .btn-adapt {
-    width: auto;
-  }
-}
-
 .mt-100 {
   margin-top: 100px;
 }
@@ -172,15 +163,67 @@ h2 {
   margin-top: 50px;
 }
 
+.icon {
+  position: relative;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+}
+
+.icon-play-button::before {
+  background-image: url("../images/play-button.svg");
+}
+
+.icon-heart::before {
+  background-image: url("../images/heart.svg");
+}
+
+.btn {
+  color: inherit;
+  background: none;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.btn-adapt {
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .btn-adapt {
+    width: auto;
+  }
+}
+
+.btn-green {
+  background: #34c176;
+}
+
+.btn-red {
+  background: #ff4157;
+}
+
+.btn-brown {
+  background: #95390c;
+}
+
+.btn-purple {
+  background: #5328a1;
+}
+
+.header-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.875rem;
+}
+
 .main-header {
   font-size: 0.6875rem;
   line-height: 0.8125rem;
   font-weight: bold;
   text-transform: uppercase;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 1.875rem;
   margin: 0 auto;
   color: #808080;
 }
@@ -200,10 +243,6 @@ h2 {
 }
 .main-header .logo img, .main-header .logo span {
   cursor: pointer;
-}
-.main-header nav li {
-  padding: 0.3125rem 0rem;
-  margin-right: 2.25rem;
 }
 .main-header input {
   margin-left: auto;
@@ -284,7 +323,7 @@ form.sub-form {
   margin: 0 auto 3.125rem;
 }
 form.sub-form input,
-form.sub-form button {
+form.sub-form .btn {
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: bold;
@@ -299,9 +338,7 @@ form.sub-form input {
   border: 2px solid rgba(255, 255, 255, 0.1);
   padding: 0.9375rem;
 }
-form.sub-form button {
-  background: #34c176;
-  color: inherit;
+form.sub-form .btn {
   text-transform: uppercase;
 }
 
@@ -396,7 +433,6 @@ form.sub-form button {
   line-height: 1.75rem;
   font-weight: normal;
   text-transform: uppercase;
-  background: none;
   border: 4px solid #fff;
   margin-top: 2.5rem;
   padding: 1.3125rem 0rem;
@@ -450,15 +486,15 @@ form.sub-form button {
     text-transform: none;
   }
 }
-.subscription .free {
+.subscription .card-bg-free {
   background: url("../images/subscribe_1.png") no-repeat center;
   background-size: cover;
 }
-.subscription .standart {
+.subscription .card-bg-standart {
   background: url("../images/subscribe_2.png") no-repeat center;
   background-size: cover;
 }
-.subscription .premium {
+.subscription .card-bg-premium {
   background: url("../images/subscribe_3.png") no-repeat center;
   background-size: cover;
 }
@@ -466,6 +502,7 @@ form.sub-form button {
 .news .box {
   margin-left: -4.375rem;
   margin-bottom: -3.125rem;
+  color: #8c8c8c;
 }
 .news .box > * {
   flex: 1 1 350px;
@@ -503,7 +540,6 @@ form.sub-form button {
   font-weight: normal;
   text-transform: none;
   margin-top: 1.5625rem;
-  color: #8c8c8c;
 }
 .news .box .info {
   margin-top: 1rem;
@@ -537,9 +573,7 @@ form.sub-form button {
   text-transform: uppercase;
   margin-top: 1.875rem;
   padding: 0.6875rem 1.875rem;
-  background: none;
   border: 1px solid #E9E9E9;
-  color: #8c8c8c;
 }
 
 .mobile .box {
@@ -564,7 +598,6 @@ form.sub-form button {
   line-height: 1rem;
   font-weight: normal;
   text-transform: none;
-  background: #ff4157;
   padding: 1.1875rem 3.75rem;
   border-radius: 1.875rem;
 }
@@ -611,34 +644,19 @@ form.sub-form button {
   margin-left: 2.1875rem;
   margin-bottom: 1.5625rem;
 }
-.banner-artists .box button {
+.banner-artists .box .btn {
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: normal;
   text-transform: uppercase;
-  position: relative;
   text-align: left;
   padding: 1.0625rem 3.125rem;
 }
-.banner-artists .box button::before {
-  content: "";
-  position: absolute;
+.banner-artists .box .icon::before {
   width: 1.25rem;
   height: 1.25rem;
   left: 0.9375rem;
   bottom: calc(50% - 10px);
-}
-.banner-artists .box .play-button {
-  background: #5328A1;
-}
-.banner-artists .box .play-button::before {
-  background-image: url("../images/play-button.svg");
-}
-.banner-artists .box .heart {
-  background: #95390C;
-}
-.banner-artists .box .heart::before {
-  background-image: url("../images/heart.svg");
 }
 
 .track img {
@@ -700,24 +718,18 @@ form.sub-form button {
     text-transform: none;
   }
 }
-.albom .image-container {
-  position: relative;
-}
-.albom .image-container::before {
-  content: "";
-  background-image: url("../images/play-button.svg");
+.albom .icon::before {
   width: 1.5625rem;
   height: 1.5625rem;
-  position: absolute;
-  bottom: 0.625rem;
   left: 0.625rem;
+  bottom: 10px;
 }
 @media (max-width: 425px) {
-  .albom .image-container::before {
+  .albom .icon::before {
     width: 0.9375rem;
     height: 0.9375rem;
-    bottom: 0.3125rem;
     left: 0.3125rem;
+    bottom: 5px;
   }
 }
 

@@ -3,7 +3,7 @@ form.sub-form {
   margin: 0 auto px-to-rem(50px);
 
   input,
-  button {
+  .btn {
     @include set-font-and-line(14px, 16px, bold);
     flex: 1 1 px-to-rem(270px);
     margin: px-to-rem(30px 15px 0px);
@@ -17,9 +17,7 @@ form.sub-form {
     padding: px-to-rem(15px);
   }
 
-  button {
-    background: $green;
-    color: inherit;
+  .btn {
     text-transform: uppercase;
   }
 }
