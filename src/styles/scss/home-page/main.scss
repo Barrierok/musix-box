@@ -88,7 +88,7 @@
     margin-bottom: px-to-rem(25px);
   }
 
-  button {
+  .btn {
     @include set-font-and-line(14px, 16px);
     padding: px-to-rem(19px 60px);
     border-radius: px-to-rem(30px);
