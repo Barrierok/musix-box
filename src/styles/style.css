@@ -428,7 +428,7 @@ form.sub-form .btn {
   text-transform: uppercase;
   vertical-align: top;
 }
-.card button {
+.card .btn {
   font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: normal;
@@ -438,7 +438,7 @@ form.sub-form .btn {
   padding: 1.3125rem 0rem;
 }
 @media (max-width: 425px) {
-  .card button {
+  .card .btn {
     font-size: 0.75rem;
     line-height: 0.875rem;
     font-weight: normal;
@@ -566,7 +566,7 @@ form.sub-form .btn {
   height: 0.6875rem;
   border-right: 1px solid #B8B8B8;
 }
-.news .box button {
+.news .box .btn {
   font-size: 0.75rem;
   line-height: 1.75rem;
   font-weight: bold;

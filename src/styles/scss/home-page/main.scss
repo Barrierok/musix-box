@@ -71,7 +71,7 @@
     }
   }
 
-  button {
+  .btn {
     @include set-font-and-line(12px, 28px, bold, uppercase);
     margin-top: px-to-rem(30px);
     padding: px-to-rem(11px 30px);
