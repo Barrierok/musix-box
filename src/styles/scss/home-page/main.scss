@@ -29,7 +29,7 @@
   @include set-media-box(70px, 20px, 350px);
   color: $gray;
 
-  h3 {
+  .news-title {
     @include set-font-and-line(30px, 35px);
   
     @media (max-width: 425px) {

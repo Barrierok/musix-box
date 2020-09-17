@@ -163,6 +163,10 @@ nav li {
   margin-top: 50px;
 }
 
+.m-a {
+  margin: auto;
+}
+
 .icon {
   position: relative;
 }
@@ -287,7 +291,7 @@ nav li {
   margin-left: 1.25rem;
   margin-bottom: 0.625rem;
 }
-.main-footer .top-part .box span {
+.main-footer .top-part .box .title {
   font-size: 1.3125rem;
   line-height: 1.125rem;
   font-weight: bold;
@@ -318,12 +322,12 @@ nav li {
   padding: 0.625rem 0rem;
 }
 
-form.sub-form {
+form.subscribe-form {
   max-width: 37.5rem;
   margin: 0 auto 3.125rem;
 }
-form.sub-form input,
-form.sub-form .btn {
+form.subscribe-form input,
+form.subscribe-form .btn {
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: bold;
@@ -332,13 +336,13 @@ form.sub-form .btn {
   margin: 1.875rem 0.9375rem 0rem;
   height: 3.125rem;
 }
-form.sub-form input {
+form.subscribe-form input {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.1875rem;
   border: 2px solid rgba(255, 255, 255, 0.1);
   padding: 0.9375rem;
 }
-form.sub-form .btn {
+form.subscribe-form .btn {
   text-transform: uppercase;
 }
 
@@ -368,7 +372,7 @@ form.sub-form .btn {
     text-transform: none;
   }
 }
-.banner-home span {
+.banner-home .sub-title {
   margin: 0.625rem 0rem;
   font-size: 1.875rem;
   line-height: 2.1875rem;
@@ -376,7 +380,7 @@ form.sub-form .btn {
   text-transform: uppercase;
 }
 @media (max-width: 425px) {
-  .banner-home span {
+  .banner-home .sub-title {
     font-size: 1.125rem;
     line-height: 1.3125rem;
     font-weight: bold;
@@ -520,14 +524,14 @@ form.sub-form .btn {
     margin-bottom: 1.25rem;
   }
 }
-.news .box h3 {
+.news .box .news-title {
   font-size: 1.875rem;
   line-height: 2.1875rem;
   font-weight: normal;
   text-transform: none;
 }
 @media (max-width: 425px) {
-  .news .box h3 {
+  .news .box .news-title {
     font-size: 1.125rem;
     line-height: 1.3125rem;
     font-weight: normal;
@@ -667,7 +671,7 @@ form.sub-form .btn {
   flex: 1 1;
   margin-left: 1.0625rem;
 }
-.track .info .title {
+.track .info .track-title {
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: normal;
@@ -689,7 +693,7 @@ form.sub-form .btn {
   color: #8c8c8c;
 }
 
-.albom h3 {
+.albom-name {
   font-size: 1.25rem;
   line-height: 1.4375rem;
   font-weight: bold;
@@ -697,7 +701,7 @@ form.sub-form .btn {
   margin: 0.625rem 0rem;
 }
 @media (max-width: 425px) {
-  .albom h3 {
+  .albom-name {
     font-size: 1rem;
     line-height: 1.1875rem;
     font-weight: bold;
@@ -733,7 +737,7 @@ form.sub-form .btn {
   }
 }
 
-.artist h3 {
+.artist-name {
   font-size: 1.25rem;
   line-height: 1.4375rem;
   font-weight: bold;
@@ -741,7 +745,7 @@ form.sub-form .btn {
   margin: 0.625rem 0rem;
 }
 @media (max-width: 425px) {
-  .artist h3 {
+  .artist-name {
     font-size: 1rem;
     line-height: 1.1875rem;
     font-weight: bold;

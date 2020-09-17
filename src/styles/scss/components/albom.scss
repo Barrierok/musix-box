@@ -1,5 +1,5 @@
 .albom {
-  h3 {
+  &-name {
     @include set-font-and-line(20px, 23px, bold);
     margin: px-to-rem(10px 0px);
   

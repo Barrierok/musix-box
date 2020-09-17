@@ -11,7 +11,7 @@
     @include set-box(20px, 10px, 200px);
     padding: px-to-rem(50px 0px 80px);
 
-    span {
+    .title {
       @include set-font-and-line(21px, 18px, bold);
       display: inline-block;
       margin: px-to-rem(30px 0px);
