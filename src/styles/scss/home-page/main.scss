@@ -24,17 +24,11 @@
   }
 }
 
-.news .box {
-  @include set-box(70px, 50px, 350px);
-  @include set-media-box(70px, 20px, 350px);
-  color: $gray;
-
-  .news-title {
-    @include set-font-and-line(30px, 35px);
-  
-    @media (max-width: 425px) {
-      @include set-font-and-line(18px, 21px);
-    }
+.news {
+  .box {
+    @include set-box(70px, 50px, 350px);
+    @include set-media-box(70px, 20px, 350px);
+    color: $gray;
   }
 
   p {
@@ -42,7 +36,16 @@
     margin-top: px-to-rem(25px);
   }
 
-  .info {
+  &-title {
+    @include set-font-and-line(30px, 35px);
+    color: $white;
+  
+    @media (max-width: 425px) {
+      @include set-font-and-line(18px, 21px);
+    }
+  }
+
+  &-info {
     margin-top: px-to-rem(16px);
 
     & > * {
@@ -71,7 +74,7 @@
     }
   }
 
-  .btn {
+  &-btn {
     @include set-font-and-line(12px, 28px, bold, uppercase);
     margin-top: px-to-rem(30px);
     padding: px-to-rem(11px 30px);
@@ -79,8 +82,10 @@
   }
 }
 
-.mobile .box {
-  @include set-box(70px, 50px, 320px);
+.mobile {
+  .box {
+    @include set-box(70px, 50px, 320px);
+  }
 
   p {
     @include set-font-and-line(16px, 19px);
@@ -88,7 +93,7 @@
     margin-bottom: px-to-rem(25px);
   }
 
-  .btn {
+  &-btn {
     @include set-font-and-line(14px, 16px);
     padding: px-to-rem(19px 60px);
     border-radius: px-to-rem(30px);

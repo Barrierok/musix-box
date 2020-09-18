@@ -4,18 +4,18 @@
     height: px-to-rem(50px);
   }
 
-  .info {
+  &-info {
     flex: 1 1;
     margin-left: px-to-rem(17px);
+  }
 
-    .track-title {
-      @include set-font-and-line(14px, 16px);
-    }
+  &-title {
+    @include set-font-and-line(14px, 16px);
+  }
 
-    .name {
-      @include set-font-and-line(12px, 14px);
-      color: $text-header;
-    }
+  &-name {
+    @include set-font-and-line(12px, 14px);
+    color: $text-header;
   }
 
   .time {

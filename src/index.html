@@ -14,7 +14,7 @@
         <span>music box</span>
       </div>
 
-      <nav>
+      <nav class="horizontal-nav">
         <ul class="d-flex">
           <li><a class="active" href="index.html">главная</a></li>
           <li><a href="catalog.html">каталог</a></li>
@@ -32,9 +32,9 @@
         <span class="sub-title">без ограничений</span>
         <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
         <form class="subscribe-form d-flex wrap">
-          <input type="text" placeholder="Имя">
-          <input type="email" placeholder="Email">
-          <button class="btn btn-green" type="submit">Получить доступ</button>
+          <input class="subscribe-form-input" type="text" placeholder="Имя">
+          <input class="subscribe-form-input" type="email" placeholder="Email">
+          <button class="subscribe-form-btn btn btn-green" type="submit">Получить доступ</button>
         </form>
       </div>
     </section>
@@ -46,29 +46,29 @@
         <div class="box d-flex justify-content-center wrap">
 
           <div class="card card-bg-free d-flex direction-column justify-content-end align-items-center">
-            <h3 class="sub-name">Бесплатная</h3>
+            <h3 class="card-title">Бесплатная</h3>
             <span>
               <span class="number">0</span><span class="money">руб.</span>
             </span>
-            <button class="btn w-100">Оформить</button>
+            <button class="card-btn btn w-100">Оформить</button>
             <p>Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
           </div>
 
           <div class="card card-bg-standart d-flex direction-column justify-content-end align-items-center">
-            <h3 class="sub-name">Стандартная</h3>
+            <h3 class="card-title">Стандартная</h3>
             <span>
               <span class="number">250</span><span class="money">руб.</span>
             </span>
-            <button class="btn w-100">Оформить</button>
+            <button class="card-btn btn w-100">Оформить</button>
             <p>Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
           </div>
 
           <div class="card card-bg-premium d-flex direction-column justify-content-end align-items-center">
-            <h3 class="sub-name">Премиум</h3>
+            <h3 class="card-title">Премиум</h3>
             <span>
               <span class="number">500</span><span class="money">руб.</span>
             </span>
-            <button class="btn w-100">Оформить</button>
+            <button class="card-btn btn w-100">Оформить</button>
             <p>Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве.</p>
           </div>
 
@@ -85,26 +85,26 @@
           <article class="d-flex direction-column justify-content-evenly">
             <h3 class="news-title">Music to Be Murdered By</h3>
             <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
-            <div class="info d-flex align-items-center">
+            <div class="news-info d-flex align-items-center">
               <img src="./images/avatar.png" alt="avatar">
               <span class="site">Music box</span>
               <div class="line"></div>
               <span class="date">17/01/2020</span>
             </div>
-            <button class="btn btn-adapt">К альбому</button>
+            <button class="news-btn btn btn-adapt">К альбому</button>
           </article>
         </div>
         <div class="box d-flex wrap-reverse mt-50">
           <article class="d-flex direction-column justify-content-evenly">
             <h3 class="news-title">Ordinary Man</h3>
             <p>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box.</p>
-            <div class="info d-flex align-items-center">
+            <div class="news-info d-flex align-items-center">
               <img src="./images/avatar.png" alt="avatar">
               <span class="site">Music box</span>
               <div class="line"></div>
               <span class="date">24/02/2020</span>
             </div>
-            <button class="btn btn-adapt">К альбому</button>
+            <button class="news-btn btn btn-adapt">К альбому</button>
           </article>
           <div class="d-flex">
             <img class="w-100 m-a" src="./images/Ordinary_Man.png" alt="Artis Ozzy Ozbourne">
@@ -118,7 +118,7 @@
           <div class="d-flex direction-column justify-content-center">
             <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
             <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
-            <button class="btn btn-adapt btn-red">Скачать</button>
+            <button class="mobile-btn btn btn-adapt btn-red">Скачать</button>
           </div>
           <div class="d-flex">
             <img class="m-a" src="./images/iphone.png" alt="iphone">
@@ -132,7 +132,7 @@
       <div class="top-part container">
         <div class="box d-flex justify-content-between wrap">
           <div>
-            <span class="title">О нас</span>
+            <span class="footer-title">О нас</span>
             <ul>
               <li><a href="#">История компании</a></li>
               <li><a href="#">Карьера</a></li>
@@ -141,7 +141,7 @@
             </ul>
           </div>
           <div>
-            <span class="title">Поддержка</span>
+            <span class="footer-title">Поддержка</span>
             <ul>
               <li><a href="#">База знаний</a></li>
               <li><a href="#">Тарифы</a></li>
@@ -150,7 +150,7 @@
             </ul>
           </div>
           <div>
-            <span class="title">Контакты</span>
+            <span class="footer-title">Контакты</span>
             <address>
               <ul>
                 <li><a href="mailto:hello@music.box">hello@music.box</a></li>
@@ -160,7 +160,7 @@
             </address>
           </div>
           <div>
-            <span class="title">Подписывайтесь</span>
+            <span class="footer-title">Подписывайтесь</span>
             <div>
               <a target="_blank" href="https://plus.google.com/"><img src="./images/Google+.png" alt="google"></a>
               <a target="_blank" href="https://twitter.com/"><img src="./images/Twitter.png" alt="twitter"></a>

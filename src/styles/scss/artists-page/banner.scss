@@ -9,14 +9,11 @@
     @include set-box(35px, 25px, 200px);
     max-width: px-to-rem(470px);
 
-    .btn {
+    .banner-btn {
       @include set-font-and-line(14px, 16px, normal, uppercase);
+      @include set-icon(20px, 20px, 15px, calc(50% - 10px));
       text-align: left;
       padding: px-to-rem(17px 50px);
-    }
-
-    .icon {
-      @include set-icon(20px, 20px, 15px, calc(50% - 10px));
     }
   }
 }

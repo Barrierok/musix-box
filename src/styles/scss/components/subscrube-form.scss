@@ -1,23 +1,23 @@
-form.subscribe-form {
+.subscribe-form {
   max-width: px-to-rem(600px);
   margin: 0 auto px-to-rem(50px);
 
-  input,
-  .btn {
+  &-input,
+  &-btn {
     @include set-font-and-line(14px, 16px, bold);
     flex: 1 1 px-to-rem(270px);
     margin: px-to-rem(30px 15px 0px);
     height: px-to-rem(50px);
   }
 
-  input {
+  &-input {
     background: $banner-border;
     border-radius: px-to-rem(3px);
     border: 2px solid $banner-border;
     padding: px-to-rem(15px);
   }
 
-  .btn {
+  &-btn {
     text-transform: uppercase;
   }
 }

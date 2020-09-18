@@ -16,7 +16,7 @@
     }
   }
 
-  .icon {
+  .image-container {
     @include set-icon(25px, 25px, 10px, 10px);
     @include set-media-icon(15px, 15px, 5px, 5px);
   }
